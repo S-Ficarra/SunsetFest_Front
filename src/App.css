@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'DragonSlapper';
+    src: url(../public/fonts/Dragonslapper.ttf) format(tff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap);
+
+
+:root {
+    --glampink: #e2557f;
+    --glamblue: #107a98;
+    --glamwhite: #e3eae9;
+    --glamgrey: #bbbcc1;
+    --glamblack: #111417;
+}
+
+body {
+    background-image: url('../src/assets/blackLeppard.png') ;
+    background-size: contain;
+    background-size: 100%;
+
+}

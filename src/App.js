@@ -1,21 +1,20 @@
+import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './views/HomePage/HomePage';
+import '../src/components/normalize.css'
+import '../src/App.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <HashRouter>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<HomePage/>}/>
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 

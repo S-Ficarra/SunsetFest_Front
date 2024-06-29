@@ -1,0 +1,78 @@
+.MenuLinksMobile {
+    position: fixed;
+    left: 0;
+    top: 4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+    color: var(--glamwhite);
+    font-family: "Reem Kufi";
+    font-size: 2em;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 1s ease;
+    z-index: -1;
+}
+
+.MenuLinksMobile.open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.MenuLinksMobile a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit;
+    cursor: pointer;
+    height: 20%;
+    width: 50vw;
+    text-align: center;
+}
+
+.MenuLinksMobile a:not(:last-child){
+    border-bottom: 2px solid var(--glampink) ;
+}
+
+.hamburger {
+    position: fixed;
+    top: 0.5em;
+    height: 3rem;
+    width: 3rem;
+    right: 0;
+    cursor: pointer;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--glampink);
+    transition: all 0.5s ease-in-out;
+}
+
+.line-1 {
+    transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+}
+
+.line-2{ 
+    opacity: 0;
+}
+
+.line-3 {
+    transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+}
+
+@media (min-width: 900px) {
+    .hamburger-menu {
+        display: none
+    }
+}

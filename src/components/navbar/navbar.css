@@ -1,0 +1,80 @@
+.navbar {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar img {
+    width: 9em;
+    padding: 1em 0em 1em 4em
+}
+
+.MenuLinks {
+    font-family: "Reem Kufi";
+    color: var(--glamwhite);
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 2em;
+}
+
+.MenuLinks a {
+    text-decoration: none; 
+    color: inherit;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.MenuLinks a:hover {
+    color: var(--glampink);
+    text-shadow: var(--glamblue) 0px 0px 10px;;
+    transition: color 0.2s ease-in;
+}
+
+.MenuLinks span {
+    font-family: "Gotham";
+    font-weight: lighter;
+    font-size: 3.5em;
+    color: var(--glampink);
+}
+
+@media (max-width: 600px) {
+    .MenuLinks {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .navbar img {
+        padding: 1.5em;
+    }
+}
+
+@media (min-width:601px) and (max-width: 900px) {
+    .MenuLinks {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .navbar img {
+        padding: 1.5em;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .MenuLinks a {
+        font-size: 1.1em;
+    }
+    .navbar img {
+        width: 7em;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+    .MenuLinks a {
+        font-size: 1.5em;
+    }
+}
