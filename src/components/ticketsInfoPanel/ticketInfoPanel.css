@@ -1,0 +1,150 @@
+
+.FullContainer {
+    background-image: url(../../assets/RainbowRoxyPhoto.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FullContainer::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0.5) 75%,
+    rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.FullContainer::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.FullContainer h2 {
+    font-family: "Reem Kufi";
+    font-weight: 400;
+    font-size: 6em;
+    color: var(--glampink);
+    z-index: 1;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+
+.FullContainer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 3.5em;
+    font-family: "Alegreya Sans SC";
+    font-weight: 300;
+}
+
+button {
+    all: unset;
+    border: solid 3px var(--glampink);
+    padding: 0.4em;
+    border-radius: 10px;
+    color: var(--glamwhite);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgba(226, 85, 127, 0.3);
+    box-shadow: var(--glamblue) 0px 0px 10px;
+    transition: background-color 0.2s ease-in;
+}
+
+.TicketContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15em 0 5em 0;
+}
+
+.InfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0 15em 0;
+}
+
+.TopSeparator {
+    height: 8em;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+.BottomSeparator {
+    height: 5em;
+    background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+@media (min-width:1000px) and (max-width: 1500px) {
+    .FullContainer a {
+        font-size: 2em;
+    }
+    .FullContainer h2  {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    .FullContainer a {
+        font-size: 2em;
+    }
+    .FullContainer h2  {
+        font-size: 3em;
+    }
+    .TicketContainer {
+        padding: 10em 0 2.5em 0;
+    }
+    .InfoContainer {
+        padding: 2.5em 0 10em 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .FullContainer a {
+        font-size: 1.5em;
+    }
+    .FullContainer h2  {
+        font-size: 2em;
+    }
+    .TicketContainer {
+        padding: 5em 0 1em 0;
+    }
+    .InfoContainer {
+        padding: 1em 0 5em 0;
+    }
+}

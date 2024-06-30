@@ -1,9 +1,9 @@
 import React from 'react';
+import '../../App.css'
 import './HomePage.css';
 import NavBar from '../../components/navbar/navbar'
-import '../../App.css'
+import TicketInfoPanel from '../../components/ticketsInfoPanel/ticketInfoPanel';
 import Footer from '../../components/footer/footer';
-
 
 
 function HomePage () {
@@ -23,6 +23,7 @@ function HomePage () {
                     Voluptas porro assumenda explicabo beatae, quibusdam eligendi debitis nisi aspernatur fuga consequuntur ab iure voluptate cupiditate molestiae nesciunt reiciendis delectus accusantium praesentium, voluptatem officia fugit animi! At facilis delectus natus?
                     </p>
                 </div>
+                <TicketInfoPanel />
                 <Footer />
             </>
     );
