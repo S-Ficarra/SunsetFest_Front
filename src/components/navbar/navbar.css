@@ -1,5 +1,11 @@
-.navbar {
+header {
+    position: sticky;
+    top: 0;
     width: 100vw;
+    z-index: 1000;
+}
+
+.navbar {
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -24,7 +30,7 @@
     text-decoration: none; 
     color: inherit;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .MenuLinks a:hover {

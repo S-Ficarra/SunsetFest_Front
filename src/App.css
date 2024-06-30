@@ -14,11 +14,16 @@
     --glamwhite: #e3eae9;
     --glamgrey: #bbbcc1;
     --glamblack: #111417;
+    --glamgradient: linear-gradient(to bottom, #107a98, #e2557f);
 }
 
 body {
-    background-image: url('../src/assets/blackLeppard.png') ;
+    background-image: url('../src/assets/blackLeppardBackground.png') ;
     background-size: contain;
     background-size: 100%;
-
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+

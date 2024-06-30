@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { NavLink } from 'react-router-dom';
 import './hamburgermenu.css'
 
+
 const  HamburgerMenu= () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,11 @@ const  HamburgerMenu= () => {
                 <div className={`line ${isOpen ? 'line-3' : ''}`}></div>
             </div>
             <div className={`MenuLinksMobile ${isOpen ? 'open' : ''}`}>
-                    <NavLink to="/">ACTUALITÉS</NavLink>
-                    <NavLink to="/">LINE-UP</NavLink>
-                    <NavLink to="/">BILLETS</NavLink>
-                    <NavLink to="/">INFORMATIONS</NavLink>
-                    <NavLink to="/">CARTE</NavLink>
+                <NavLink to="/">ACTUALITÉS</NavLink>
+                <NavLink to="/">LINE-UP</NavLink>
+                <NavLink to="/">BILLETS</NavLink>
+                <NavLink to="/">INFORMATIONS</NavLink>
+                <NavLink to="/">CARTE</NavLink>
             </div>
         </div>
     );
