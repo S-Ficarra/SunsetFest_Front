@@ -1,0 +1,54 @@
+.HeroSection {
+    background-color: black;
+}
+
+.HeroMainContainer {
+    position: relative;
+}
+
+.HeroSection video {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    opacity: 65%;
+}
+
+.HeroSection::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.HeroLogoContainer {
+    position: absolute;
+    height: 85vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.HeroLogoContainer img {
+    height: 65vh;
+}
+
+
+@media (max-width: 700px) {
+    .HeroLogoContainer {
+        align-items: center;
+        padding-top: 0;
+    }
+    .HeroLogoContainer img {
+        height: 40vh;
+    }
+}

@@ -81,7 +81,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15em 0 5em 0;
+    padding: 15em 0 3em 0;
 }
 
 .InfoContainer {
@@ -89,7 +89,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5em 0 15em 0;
+    padding: 3em 0 15em 0;
 }
 
 .TopSeparator {
@@ -102,7 +102,7 @@ button:hover {
 }
 
 .BottomSeparator {
-    height: 5em;
+    height: 8em;
     background: linear-gradient(to bottom, 
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 0.9) 30%,

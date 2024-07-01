@@ -9,7 +9,7 @@ function TicketInfoPanel () {
             <div className="TopSeparator"></div>
             <div className="FullContainer">
                 <div className="TicketContainer">
-                    <h2>BILLETERIE</h2>
+                    <h2>BILLETTERIE</h2>
                     <a href="https://weezevent.com/fr/" target="blank">
                     <button>achetez vos billets</button>
                     </a>
