@@ -1,8 +1,5 @@
 .HeroSection {
     background-color: black;
-}
-
-.HeroMainContainer {
     position: relative;
 }
 
@@ -13,7 +10,7 @@
     opacity: 65%;
 }
 
-.HeroSection::after {
+.HeroMainContainer::after {
     content: ' ';
     position: absolute;
     bottom: 0;
@@ -30,7 +27,6 @@
 
 .HeroLogoContainer {
     position: absolute;
-    height: 85vh;
     width: 100vw;
     z-index: 2;
     display: flex;
@@ -51,4 +47,9 @@
     .HeroLogoContainer img {
         height: 40vh;
     }
+}
+@media (max-width: 900px) {
+    .HeroSection video {
+        height: 85vh;
+    }                   
 }
