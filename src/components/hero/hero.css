@@ -16,7 +16,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50%;
+    height: 60%;
     background: linear-gradient(to top, 
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 0.9) 30%,
@@ -42,11 +42,14 @@
 @media (max-width: 700px) {
     .HeroLogoContainer {
         align-items: center;
-        padding-top: 0;
     }
     .HeroLogoContainer img {
         height: 40vh;
     }
+    .HeroSection video {
+        height: 50vh;
+    }
+
 }
 @media (max-width: 900px) {
     .HeroSection video {

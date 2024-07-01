@@ -11,7 +11,7 @@ function Hero () {
                 <div className="HeroLogoContainer">
                     <img src={HeroLogo} alt="The Sunset Strip Festival" />
                 </div>
-                <video autoplay='true' muted='true' loop='true'>
+                <video autoPlay={true} muted={true} loop={true}>
                     <source src={HeroVideo} type="video/mp4"/>
                 </video>
             </div>

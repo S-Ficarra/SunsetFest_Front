@@ -7,6 +7,8 @@ import Footer from '../../components/footer/footer';
 import WMRTS from '../../assets/when metal ruled the strip.png'
 import TRGJ from '../../assets/the rock greatest joyride.png'
 import Hero from '../../components/hero/hero';
+import Countdown from '../../components/countdown/countdown';
+import endingTime from '../../services/fakeDatas/countdown.json'
 
 
 function HomePage () {
@@ -14,6 +16,7 @@ function HomePage () {
             <>
                 <NavBar />
                 <Hero />
+                <Countdown endingTime={endingTime.endingTime}/>
                 <div className='HomePageSloganContainer'>
                     <img src={WMRTS} alt="" />
                 </div>
