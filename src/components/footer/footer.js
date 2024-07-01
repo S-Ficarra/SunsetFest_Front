@@ -66,7 +66,7 @@ function Footer () {
                 <div className="FooterLinks">
                     <NavLink>CONTACT</NavLink>
                     <span>|</span>
-                    <NavLink>COOKIES</NavLink>
+                    <NavLink to='/cookies'>COOKIES</NavLink>
                     <span>|</span>
                     <NavLink>MENTIONS LÉGALES</NavLink>
                     <span>|</span>
