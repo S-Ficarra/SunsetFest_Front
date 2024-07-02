@@ -68,7 +68,7 @@ function Footer () {
                     <span>|</span>
                     <NavLink to='/cookies'>COOKIES</NavLink>
                     <span>|</span>
-                    <NavLink>MENTIONS LÉGALES</NavLink>
+                    <NavLink to='/mentionlegales'>MENTIONS LÉGALES</NavLink>
                     <span>|</span>
                     <NavLink>PRESSE</NavLink>
                 </div>
