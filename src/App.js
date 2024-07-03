@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../src/components/normalize.css'
+import '../src/components/common.css'
 import '../src/App.css'
 import HomePage from './views/HomePage/HomePage';
 import CookiesPage from './views/CompliancePages/CookiesPage'
 import LegalNoticePage from './views/CompliancePages/LegalNoticePage';
 import useScrollToTop from './hooks/useScrollToTop';
+import LineUpPage from './views/LineUpPage/LineUpPage';
 
 function ScrollToTop() {
   useScrollToTop();
@@ -19,6 +21,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<HomePage/>}/>
+          <Route path='/lineup' element={<LineUpPage/>}/>
           <Route path='/cookies' element={<CookiesPage/>}/>
           <Route path='/mentionlegales' element={<LegalNoticePage/>}/>
         </Routes>

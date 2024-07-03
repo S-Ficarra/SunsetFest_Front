@@ -1,0 +1,129 @@
+.LineUpSection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.AllBandContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.BandContainer {
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.3s ease,
+}
+
+a .BandContainer {
+    width: 400px;
+    height: 301px;
+}
+
+.BandContainer img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--glampink);
+    align-self: baseline;
+    position: relative;
+}
+
+.BandContainer:hover {
+    box-shadow: 0 0 30px var(--glamblue);
+    transform: translate(0, -1%);
+}
+
+.BandContainer:hover .BlackFilter{
+    opacity: 1;
+}
+
+.BlackFilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 1px;
+    border-radius: 10px;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%);;
+    opacity: 0;
+    transition: opacity 0.4s ease,
+}
+
+.BandContainer h2 {
+    font-family: 'Reem Kufi';
+    font-size: 3em;
+    text-align: center;
+    color: var(--glamwhite);
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-shadow: 
+    -1px -1px 0 var(--glamblue),
+     1px -1px 0 var(--glamblue),
+    -1px  1px 0 var(--glamblue),
+     1px  1px 0 var(--glamblue);
+}
+
+@media (max-width: 640px) {
+    .AllBandContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    a .BandContainer,
+    .BandContainer img  {
+        width: 300px;
+        height: 200px;
+    }
+    .BandContainer h2 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 999px) {
+    .AllBandContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    a .BandContainer,
+    .BandContainer img  {
+        width: 300px;
+        height: 200px;
+    }
+    .BandContainer h2 {
+        font-size: 2em;
+    }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+    .AllBandContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    a .BandContainer,
+    .BandContainer img  {
+        width: 300px;
+        height: 200px;
+    }
+    .BandContainer h2 {
+        font-size: 2em;
+    }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    a .BandContainer,
+    .BandContainer img  {
+        width: 300px;
+        height: 200px;
+    }
+    .BandContainer h2 {
+        font-size: 2em;
+    }
+}

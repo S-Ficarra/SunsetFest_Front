@@ -16,7 +16,7 @@ function NavBar () {
                 <div className="MenuLinks">
                     <NavLink>ACTUALITÉS</NavLink>
                     <span>|</span>
-                    <NavLink>LINE-UP</NavLink>
+                    <NavLink to='/lineup'>LINE-UP</NavLink>
                     <span>|</span>
                     <NavLink>BILLETS</NavLink>
                     <span>|</span>

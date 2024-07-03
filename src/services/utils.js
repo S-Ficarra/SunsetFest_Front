@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-
 
 export function formatDate(date) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -30,3 +27,8 @@ export function updateCountdown (endingTime) {
     let timeDifference = getTimeDifference(endingTime);
     return formatCountdown(timeDifference);
 }; 
+
+export function convertToBase64 (byteArray) {
+    const binary = byteArray.reduce((acc, byte) => acc + String.fromCharCode(byte), '');
+    return `data:image/jpeg;base64,${btoa(binary)}`;
+  };

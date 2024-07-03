@@ -6,7 +6,6 @@ import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
 import TicketInfoPanel from "../../components/ticketsInfoPanel/ticketInfoPanel";
 
 
-
 function CookiesPage () {
     return (
         <>
