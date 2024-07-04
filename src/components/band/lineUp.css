@@ -67,10 +67,10 @@ a .BandContainer {
     right: 0;
     margin: auto;
     text-shadow: 
-    -1px -1px 0 var(--glamblue),
-     1px -1px 0 var(--glamblue),
-    -1px  1px 0 var(--glamblue),
-     1px  1px 0 var(--glamblue);
+    -2px -2px 0 var(--glamblue),
+     2px -2px 0 var(--glamblue),
+    -2px  2px 0 var(--glamblue),
+     2px  2px 0 var(--glamblue);
 }
 
 @media (max-width: 640px) {
