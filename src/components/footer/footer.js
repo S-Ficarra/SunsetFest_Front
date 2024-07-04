@@ -64,7 +64,7 @@ function Footer () {
 
             <div className="FooterLinksContainer">
                 <div className="FooterLinks">
-                    <NavLink>CONTACT</NavLink>
+                    <NavLink to='/contact'>CONTACT</NavLink>
                     <span>|</span>
                     <NavLink to='/cookies'>COOKIES</NavLink>
                     <span>|</span>

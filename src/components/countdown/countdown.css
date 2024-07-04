@@ -21,7 +21,7 @@
 .CountdownItem {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items:flex-start;
+    justify-items: center;
     align-items: baseline;
     gap: 10px;
 }

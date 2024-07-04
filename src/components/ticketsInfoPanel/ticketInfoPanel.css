@@ -20,10 +20,10 @@
     right: 0;
     height: 50%;
     background: linear-gradient(to bottom,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 0, 0, 0.5) 75%,
-    rgba(0, 0, 0, 0) 100%);
-    pointer-events: none;
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.1) 100%);
     z-index: -1;
 }
 
@@ -38,7 +38,7 @@
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 0.9) 30%,
     rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%);
+    rgba(0, 0, 0, 0.1) 100%);
     pointer-events: none;
     z-index: -1;
 }
@@ -46,7 +46,7 @@
 .FullContainer h2 {
     font-family: "Reem Kufi";
     font-weight: 400;
-    font-size: 6em;
+    font-size: 5em;
     color: var(--glampink);
     z-index: 1;
     margin-bottom: 0.2em;
@@ -56,7 +56,7 @@
 .FullContainer a {
     text-decoration: none;
     color: inherit;
-    font-size: 3.5em;
+    font-size: 2em;
     font-family: "Alegreya Sans SC";
     font-weight: 300;
 }
@@ -64,7 +64,7 @@
 button {
     all: unset;
     border: solid 3px var(--glampink);
-    padding: 0.4em;
+    padding: .5em 1em .5em 1em;
     border-radius: 10px;
     color: var(--glamwhite);
     background-color: rgba(0, 0, 0, 0.3);
@@ -93,16 +93,16 @@ button:hover {
 }
 
 .TopSeparator {
-    height: 8em;
+    height: 4em;
     background: linear-gradient(to top, 
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 0.9) 30%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0) 100%);
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.1) 100%);
 }
 
 .BottomSeparator {
-    height: 8em;
+    height: 4em;
     background: linear-gradient(to bottom, 
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 0.9) 30%,

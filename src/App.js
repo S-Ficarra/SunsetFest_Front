@@ -9,6 +9,7 @@ import LegalNoticePage from './views/CompliancePages/LegalNoticePage';
 import useScrollToTop from './hooks/useScrollToTop';
 import LineUpPage from './views/LineUpPage/LineUpPage';
 import BandPage from './views/BandPage/BandPage';
+import ContactPage from './views/ContactPage/ContactPage';
 
 function ScrollToTop() {
   useScrollToTop();
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/lineup' element={<LineUpPage/>}/>
           <Route path='/lineup/:name' element={<BandPage/>} />
+          <Route path='/contact' element={<ContactPage/>}/>
           <Route path='/cookies' element={<CookiesPage/>}/>
           <Route path='/mentionlegales' element={<LegalNoticePage/>}/>
         </Routes>

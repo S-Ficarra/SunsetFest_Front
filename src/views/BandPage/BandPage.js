@@ -38,7 +38,7 @@ function BandPage () {
                 <p>{band._text}</p>
             </section>
             <section className="SocialsSection">
-                <div className="SocialsContainer">
+                <div className="SocialsBandContainer">
                     <a href={band._socials._facebook} target="blank"><img src={FbLogo} alt="Notre Facebook" /></a>
                     <a href={band._socials._instagram} target="blank"><img src={InstaLogo} alt="Notre Instagram" /></a>
                     <a href={band._socials._twitter} target="blank"><img src={XLogo} alt="Notre X (Twitter)" /></a>

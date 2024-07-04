@@ -12,10 +12,21 @@
 .TitleContainer h1 {
     font-family: 'Reem Kufi';
     font-weight: 400;
-    font-size: 7em;
+    font-size: 5em;
     color: var(--glampink);
     margin: 0;
     text-align: center;
+}
+
+.Separator {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Separator {
+    height: 7em;
+    padding: 10em 0 10em 0;
 }
 
 
@@ -25,17 +36,17 @@
     } 
     .Separator {
         height: 2em;
-        padding: 7.5em 0 7.5em 0;
+        padding: 5em 0 5em 0;
     }
 }
 
 @media (min-width: 700px) and (max-width: 1200px) {
 
     .TitleContainer h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
     .Separator {
         height: 4em;
-        padding: 10em 0 10em 0;
+        padding: 7em 0 7em 0;
     }
 }
