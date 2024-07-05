@@ -12,6 +12,14 @@
     align-content: center;
 }
 
+.ParagraphContainer {
+    margin: 0 auto 5em auto ;
+}
+
+.ParagraphContainer p {
+    font-size: 1.5em;
+}
+
 .FormHead {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -44,40 +52,36 @@
     box-shadow: 0 0 20px var(--glamblue);
 }
 
-.FormBottom textarea {
-    height: 10em;
-    width: 100%;
-    margin-top: 30px;
-    padding: 1em;
-    box-sizing: border-box;
-    font-family: "Alegreya Sans SC";
-    font-size: 1.6em;
-    font-weight: 300;
+.FormFieldBottom {
+    padding-top: 30px;
+}
+
+.FormFieldBottom p {
     color: var(--glamwhite);
-    border-radius: 10px;
-    border: none;
-    background-color: hsla(193, 81%, 33%, 0.5);
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.FormBottom textarea::placeholder {
-    color: var(--glamwhite);
-}
-
-.FormBottom textarea:hover,
-.FormBottom textarea:focus{
-    border: 1px solid var(--glampink);
-    outline: 1px solid var(--glampink);;
-    box-shadow: 0 0 20px var(--glamblue);
-}
-
-.ParagraphContainer {
-    margin-top: 5em;
-}
-
-.ParagraphContainer p {
+    font-family: 'Alegreya Sans SC';
     font-size: 1.5em;
+    font-weight: 100;
+}
+
+input[type=file] {
+    color: var(--glamblue);
+    font-family: "Alegreya Sans SC";
+}
+
+input[type=file]::file-selector-button  {
+    font-family: "Alegreya Sans SC";
+    font-size: 1.3em;
+    padding: .5em;
+    border: 2px solid var(--glamblue);
+    border-radius: 10px;
+    color: var(--glamwhite);
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: rgba(16, 123, 152, 0.5);
+    box-shadow: 0 0 20px var(--glamblue);
 }
 
 .FormContainer button {
@@ -103,6 +107,9 @@
     .FormField textarea {
         font-size: 1em;
     }
+    input[type=file]::file-selector-button {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 650px) and (max-width: 1000px) {
@@ -110,6 +117,9 @@
         font-size: 1em;
     }
     .FormField textarea {
+        font-size: 1em;
+    }
+    .FormFieldBottom p {
         font-size: 1em;
     }
 }

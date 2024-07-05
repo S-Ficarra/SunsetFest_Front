@@ -5,6 +5,7 @@ import './lineUp.css'
 import { Link } from "react-router-dom";
 
 function LineUp () {
+
     return (
         <section className="LineUpSection">
             <div className="AllBandContainer">

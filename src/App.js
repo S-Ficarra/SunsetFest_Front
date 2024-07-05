@@ -10,6 +10,8 @@ import useScrollToTop from './hooks/useScrollToTop';
 import LineUpPage from './views/LineUpPage/LineUpPage';
 import BandPage from './views/BandPage/BandPage';
 import ContactPage from './views/ContactPage/ContactPage';
+import PressPage from './views/PressPage/PressPage';
+import SucessPage from './views/SucessPage/SucessPage';
 
 function ScrollToTop() {
   useScrollToTop();
@@ -28,6 +30,8 @@ function App() {
           <Route path='/contact' element={<ContactPage/>}/>
           <Route path='/cookies' element={<CookiesPage/>}/>
           <Route path='/mentionlegales' element={<LegalNoticePage/>}/>
+          <Route path='/presse' element={<PressPage/>}/>
+          +<Route path='/sucess' element={<SucessPage/>}/>
         </Routes>
       </div>
     </BrowserRouter>

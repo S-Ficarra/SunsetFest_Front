@@ -70,7 +70,7 @@ function Footer () {
                     <span>|</span>
                     <NavLink to='/mentionlegales'>MENTIONS LÉGALES</NavLink>
                     <span>|</span>
-                    <NavLink>PRESSE</NavLink>
+                    <NavLink to='/presse' >PRESSE</NavLink>
                 </div>
             </div>
         </footer>

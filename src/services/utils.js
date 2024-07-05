@@ -4,7 +4,6 @@ export function formatDate(date) {
     return new Date(date).toLocaleDateString('fr-FR', options);
   };
 
-
 export function getTimeDifference (endingTime) {
     return new Date(endingTime) - new Date () 
 }
