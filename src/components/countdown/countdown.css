@@ -15,12 +15,12 @@
     grid-template-columns:repeat(4,1fr);
     justify-items: center;
     align-items: baseline;
-    width: 65vw;
+    width: 50vw;
 }
 
 .CountdownItem {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr .5fr;
     justify-items: center;
     align-items: baseline;
     gap: 10px;
@@ -30,6 +30,7 @@
     font-family: 'Reem Kufi';
     color: var(--glamwhite);
     font-size: 9em;
+    margin: 0;
 }
 
 .CountdownItem p {

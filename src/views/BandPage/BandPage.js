@@ -1,7 +1,7 @@
 import React from "react";
 import './BandPage.css'
 import { useParams } from "react-router-dom";
-import BandData from '../../services/fakeDatas/bands.json'
+import { useBand } from "../../hooks/useBand";
 import NavBar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
@@ -13,42 +13,59 @@ import XLogo from '../../assets/socialsLogos/x-twitter.svg'
 import YoutLogo from '../../assets/socialsLogos/youtube.svg'
 import SpotLogo from '../../assets/socialsLogos/spotify.svg'
 import WebLogo from '../../assets/socialsLogos/globe-solid.svg'
+import { usePerformance } from "../../hooks/usePerformance";
 
 function BandPage () {
 
-    const { name } = useParams();
-    const formattedName = name.replace(/([A-Z])/g, ' $1').trim();
-    const band = BandData.find((band) => band._name === formattedName);
+    const { id } = useParams();
+    const { band } = useBand(id);
+    const { performance } = usePerformance(band ? band.id : "");
+
+    if (!band || !performance) {
+        return <div>Chargement...</div>;
+    }
+
+    const date = new Date(performance.timeFrame);
+    const day = date.toLocaleDateString('fr-FR', { weekday: 'long' });
+    const time = date.toLocaleTimeString('fr-FR', { hour: '2-digit'});
 
     return (
         <>
             <NavBar />
             <div className="BandHeader">
-                <img src={convertToBase64(band._thumbnailImage.data)} alt={band._name} />
+                <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
                 <div className="HeaderBlackFilter"></div>
                 <div className="BandHeaderTextContainer">
-                    <h1>{band._name.toUpperCase()}</h1>
-                    <p>{band._country}</p>
+                    <h1>{band.name.toUpperCase()}</h1>
+                    <p>{band.country}</p>
                 </div>
             </div>
             <section className="SpotifySection">
-            <iframe src={band._socials._spotifyIntegrationLink} frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src={band.spotifyIntegrationLink} title="Spotify Player" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
             <section className="BandTextSection">
-                <p>{band._text}</p>
+                <p>{band.text}</p>
+            </section>
+            <section className="PerformanceSection">
+                <div className="PerformanceStage"></div>
+                <h2>SCENE {performance.stage.toUpperCase()}</h2>
+                <div className="PerformanceDay"></div>
+                <h2>{day.toUpperCase()}</h2>
+                <div className="PerformanceTime"></div>
+                <h2>{time.toUpperCase()}</h2>
             </section>
             <section className="SocialsSection">
                 <div className="SocialsBandContainer">
-                    <a href={band._socials._facebook} target="blank"><img src={FbLogo} alt="Notre Facebook" /></a>
-                    <a href={band._socials._instagram} target="blank"><img src={InstaLogo} alt="Notre Instagram" /></a>
-                    <a href={band._socials._twitter} target="blank"><img src={XLogo} alt="Notre X (Twitter)" /></a>
-                    <a href={band._socials._youtube} target="blank"><img src={YoutLogo} alt="Notre chaine YouTube" /></a>
-                    <a href={band._socials._spotify} target="blank"><img src={SpotLogo} alt="Notre playlist Spotify" /></a>
-                    <a href={band._socials._website} target="blank"><img src={WebLogo} alt="Notre channel Discord" /></a>
+                    <a href={band.facebook} target="blank"><img src={FbLogo} alt="Notre Facebook" /></a>
+                    <a href={band.instagram} target="blank"><img src={InstaLogo} alt="Notre Instagram" /></a>
+                    <a href={band.twitter} target="blank"><img src={XLogo} alt="Notre X (Twitter)" /></a>
+                    <a href={band.youtube} target="blank"><img src={YoutLogo} alt="Notre chaine YouTube" /></a>
+                    <a href={band.spotify} target="blank"><img src={SpotLogo} alt="Notre playlist Spotify" /></a>
+                    <a href={band.website} target="blank"><img src={WebLogo} alt="Notre channel Discord" /></a>
                 </div>
             </section>
             <section className="YoutubeSection">
-                <iframe src={band._socials._youtubeIntegrationLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+                <iframe src={band.youtubeIntegrationLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
             </section>
             <div className="Separator">
                 <img src={SkullLogo} alt="Notre logo" />
