@@ -1,9 +1,10 @@
 import { PerformanceDto } from "../dto/performance.dto";
+import { BASE_URL } from "../App";
 
 export const PerformanceService = {
 
     async fetchPerformance() {
-      const response = await fetch('http://localhost:3000/performances');
+      const response = await fetch(`${BASE_URL}performances`);
       const data = await response.json();
       return data.map(performance => new PerformanceDto(
         performance._id,

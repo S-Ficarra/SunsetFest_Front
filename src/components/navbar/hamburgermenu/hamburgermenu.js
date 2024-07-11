@@ -19,8 +19,8 @@ const  HamburgerMenu= () => {
                 <div className={`line ${isOpen ? 'line-3' : ''}`}></div>
             </div>
             <div className={`MenuLinksMobile ${isOpen ? 'open' : ''}`}>
-                <NavLink to="/">ACTUALITÉS</NavLink>
-                <NavLink to="/">LINE-UP</NavLink>
+                <NavLink to="/actualites">ACTUALITÉS</NavLink>
+                <NavLink to="/lineup">LINE-UP</NavLink>
                 <NavLink to="/">BILLETS</NavLink>
                 <NavLink to="/">INFORMATIONS</NavLink>
                 <NavLink to="/">CARTE</NavLink>

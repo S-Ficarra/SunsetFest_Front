@@ -2,11 +2,11 @@ import React from "react";
 import { convertToBase64 } from "../../services/utils";
 import './lineUp.css'
 import { Link } from "react-router-dom";
-import { useBands } from "../../hooks/useBands";
+import { useAllBands } from "../../hooks/useAllBands";
 
 function LineUp () {
 
-    const { bands } = useBands();
+    const { bands } = useAllBands();
 
     return (
         <section className="LineUpSection">

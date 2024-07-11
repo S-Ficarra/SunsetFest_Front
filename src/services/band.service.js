@@ -1,9 +1,10 @@
 import { BandDto } from "../dto/band.dto";
+import { BASE_URL } from "../App";
 
 export const bandService = {
 
-    async fetchBands() {
-      const response = await fetch('http://localhost:3000/bands');
+    async fetchAllBands() {
+      const response = await fetch(`${BASE_URL}bands`);
       const data = await response.json();
       return data.map(band => new BandDto(
         band._id,
@@ -20,7 +21,7 @@ export const bandService = {
     },
 
     async fetchBand(bandId) {
-        const response = await fetch(`http://localhost:3000/bands/${bandId}`);
+        const response = await fetch(`${BASE_URL}bands/${bandId}`);
         const band = await response.json();
         return new BandDto(
           band._id,

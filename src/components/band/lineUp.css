@@ -15,7 +15,8 @@
 .BandContainer {
     position: relative;
     border-radius: 10px;
-    transition: all 0.3s ease,
+    transition: all 0.3s ease;
+    border: 1px solid var(--glampink);
 }
 
 a .BandContainer {
@@ -28,7 +29,6 @@ a .BandContainer {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    border: 1px solid var(--glampink);
     align-self: baseline;
     position: relative;
 }

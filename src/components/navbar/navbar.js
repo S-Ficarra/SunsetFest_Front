@@ -14,7 +14,7 @@ function NavBar () {
                     <NavLink to='/'><img src={logo} alt="Retour à l'accueil" /></NavLink> 
                 </div>
                 <div className="MenuLinks">
-                    <NavLink>ACTUALITÉS</NavLink>
+                    <NavLink to='/actualites'>ACTUALITÉS</NavLink>
                     <span>|</span>
                     <NavLink to='/lineup'>LINE-UP</NavLink>
                     <span>|</span>

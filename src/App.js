@@ -12,11 +12,15 @@ import BandPage from './views/BandPage/BandPage';
 import ContactPage from './views/ContactPage/ContactPage';
 import PressPage from './views/PressPage/PressPage';
 import SucessPage from './views/SucessPage/SucessPage';
+import AllNewsPage from './views/AllNewsPage/AllNewsPage';
+
+export const BASE_URL = 'http://localhost:3000/'
 
 function ScrollToTop() {
   useScrollToTop();
   return null;
 }
+
 
 function App() {
   return (
@@ -25,6 +29,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<HomePage/>}/>
+          <Route path='/actualites' element={<AllNewsPage/>}/>
           <Route path='/lineup' element={<LineUpPage/>}/>
           <Route path='/lineup/:id/:name' element={<BandPage/>} />
           <Route path='/contact' element={<ContactPage/>}/>

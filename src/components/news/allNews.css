@@ -1,0 +1,128 @@
+.AllNewsSection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.AllNewsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    gap: 40px;
+}
+
+.NewsContainer {
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--glampink);
+    transition: all 0.3s ease,
+}
+
+a .NewsContainer {
+    width: 700px;
+    height: 402px;
+}
+
+.NewsContainer img {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    align-self: baseline;
+    position: relative;
+}
+
+a .NewsContainer:hover {
+    box-shadow: 0 0 30px var(--glamblue);
+}
+
+.NewsContainer:hover .BlackFilter{
+    opacity: 1;
+}
+
+.BlackFilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%);;
+    opacity: 0;
+    transition: opacity 0.4s ease,
+}
+
+.NewsContainer h2 {
+    font-family: 'Reem Kufi';
+    font-size: 3em;
+    text-align: center;
+    color: var(--glamwhite);
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-shadow: 
+    -2px -2px 0 var(--glamblue),
+     2px -2px 0 var(--glamblue),
+    -2px  2px 0 var(--glamblue),
+     2px  2px 0 var(--glamblue);
+}
+
+@media (max-width: 640px) {
+    .AllNewsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    a .NewsContainer,
+    .NewsContainer img  {
+        width: 300px;
+        height: 200px;
+    }
+    .NewsContainer h2 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 999px) {
+    .AllNewsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    a .NewsContainer,
+    .NewsContainer img  {
+        width: 300px;
+        height: 200px;
+    }
+    .NewsContainer h2 {
+        font-size: 2em;
+    }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+    .AllNewsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    a .NewsContainer,
+    .NewsContainer img  {
+        width: 400px;
+        height: 250px;
+    }
+    .NewsContainer h2 {
+        font-size: 2em;
+    }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    a .NewsContainer,
+    .NewsContainer img  {
+        width: 500px;
+        height: 300px;
+    }
+    .NewsContainer h2 {
+        font-size: 2em;
+    }
+}
