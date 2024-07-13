@@ -13,6 +13,7 @@ import ContactPage from './views/ContactPage/ContactPage';
 import PressPage from './views/PressPage/PressPage';
 import SucessPage from './views/SucessPage/SucessPage';
 import AllNewsPage from './views/AllNewsPage/AllNewsPage';
+import NewsPage from './views/NewsPage/NewsPage';
 
 export const BASE_URL = 'http://localhost:3000/'
 
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/actualites' element={<AllNewsPage/>}/>
+          <Route path='/actualites/:id/:title' element={<NewsPage/>} />
           <Route path='/lineup' element={<LineUpPage/>}/>
           <Route path='/lineup/:id/:name' element={<BandPage/>} />
           <Route path='/contact' element={<ContactPage/>}/>

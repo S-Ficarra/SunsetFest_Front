@@ -1,0 +1,73 @@
+.ImageContainer {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ImageContainer img {
+    height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.ImageBlackFilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+.ImageContainer h1 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    font-family: 'Reem Kufi';
+    color: var(--glampink);
+    font-size: 5em;
+    padding: .3em .8em .3em .8em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px var(--glampink);
+    border-radius: 20px;
+}
+
+.ContentContainer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 20%);
+    padding-top: 2em;
+}
+
+.ContentContainer p {
+    width: 60%;
+    color: var(--glamwhite);
+    font-family: 'Alegreya Sans SC';
+    font-size: 2em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (max-width: 649px) {
+    .ImageContainer h1 {
+        font-size: 3em;
+    }
+    .ContentContainer p{
+        width: 80%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+    .ImageContainer h1 {
+        font-size: 3.5em;
+    }
+}
+

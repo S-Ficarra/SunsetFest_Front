@@ -12,7 +12,7 @@ function AllNews () {
         <section className="AllNewsSection">
             <div className="AllNewsContainer">
                 {news.map((news) => (
-                    <Link to={`/actualités/${news.id}/${encodeURIComponent(news.title.replace(/\s/g, '-'))}`}>
+                    <Link to={`/actualites/${news.id}/${encodeURIComponent(news.title.replace(/\s/g, '-'))}`}>
                         <div className="NewsContainer">
                         <img src={convertToBase64(news.image.data)} alt={news.title} />
                         <div className="BlackFilter"></div>
