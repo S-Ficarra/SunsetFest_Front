@@ -14,6 +14,7 @@ import PressPage from './views/PressPage/PressPage';
 import SucessPage from './views/SucessPage/SucessPage';
 import AllNewsPage from './views/AllNewsPage/AllNewsPage';
 import NewsPage from './views/NewsPage/NewsPage';
+import InformationPage from './views/InformationPage/InformationPage';
 
 export const BASE_URL = 'http://localhost:3000/'
 
@@ -34,6 +35,7 @@ function App() {
           <Route path='/actualites/:id/:title' element={<NewsPage/>} />
           <Route path='/lineup' element={<LineUpPage/>}/>
           <Route path='/lineup/:id/:name' element={<BandPage/>} />
+          <Route path='/informations' element={<InformationPage/>} />
           <Route path='/contact' element={<ContactPage/>}/>
           <Route path='/cookies' element={<CookiesPage/>}/>
           <Route path='/mentionlegales' element={<LegalNoticePage/>}/>

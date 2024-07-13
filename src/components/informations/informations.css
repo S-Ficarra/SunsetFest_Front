@@ -1,0 +1,87 @@
+.InformationContainer {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.InformationImgContainer {
+    width: 45%;
+}
+
+.InformationImgContainer img{
+    width: 41vw;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid 2px var(--glampink);
+}
+
+.InformationContentContainer {
+    width: 51%;
+}
+
+.InformationContentContainer h1 {
+    width: fit-content ;
+    font-family: 'Reem Kufi';
+    color: var(--glampink);
+    font-size: 2.2em;
+    padding: .5em 1em .5em 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px var(--glampink);
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--glamblue);
+}
+
+.InformationContentContainer h1.left-align {
+    margin: 0;
+    text-align: left;
+}
+
+.InformationContentContainer h1.right-align {
+    margin: 0 0 0 auto;
+    text-align: right;
+}
+
+.TextContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.InformationContentContainer p {
+    color: var(--glamwhite);
+    font-family: 'Alegreya Sans SC';
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (max-width: 899px) {
+    .TitleContainer h1 {
+        font-size: 2.5em;
+    }
+    .InformationContainer {
+        flex-direction: column;
+        margin: auto;
+        align-content: center;
+        justify-content: center;
+    }
+    .InformationContentContainer {
+        width: auto;
+    }
+    .InformationContentContainer h1 {
+        font-size: 1.8em;
+    }
+    .InformationImgContainer img{
+        display: none;
+    }
+
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+    .InformationContentContainer h1 {
+        font-size: 1.8em;
+    }
+}

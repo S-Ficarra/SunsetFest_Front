@@ -20,7 +20,7 @@ function NavBar () {
                     <span>|</span>
                     <NavLink>BILLETS</NavLink>
                     <span>|</span>
-                    <NavLink>INFORMATIONS</NavLink>
+                    <NavLink to='/informations'>INFORMATIONS</NavLink>
                     <span>|</span>
                     <NavLink>CARTE</NavLink>
                 </div>

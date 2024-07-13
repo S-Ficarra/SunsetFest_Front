@@ -23,5 +23,5 @@ function LineUp () {
             </div>
         </section>
     );
-}
+};
 export default LineUp;

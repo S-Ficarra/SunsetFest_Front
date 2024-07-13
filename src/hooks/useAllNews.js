@@ -8,7 +8,6 @@ export const useAllNews = () => {
 
     useEffect(() => {
         NewsService.fetchAllNews().then(newsDtos => {
-            console.log(newsDtos);
             const newsModels = newsDtos.map(dto => NewsViewModel.transformNewsDtoToNewsModel(dto));
             setNews(newsModels);
         });

@@ -22,7 +22,7 @@ const  HamburgerMenu= () => {
                 <NavLink to="/actualites">ACTUALITÉS</NavLink>
                 <NavLink to="/lineup">LINE-UP</NavLink>
                 <NavLink to="/">BILLETS</NavLink>
-                <NavLink to="/">INFORMATIONS</NavLink>
+                <NavLink to="/informations">INFORMATIONS</NavLink>
                 <NavLink to="/">CARTE</NavLink>
             </div>
         </div>

@@ -1,4 +1,4 @@
-export class NewsModel {
+export class InformationModel {
 
     constructor(id, title, text, image) {
         this.id = id;
