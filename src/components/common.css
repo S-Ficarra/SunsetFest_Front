@@ -18,6 +18,15 @@
     text-align: center;
 }
 
+.SecondTitleContainer h1 {
+    font-family: 'Reem Kufi';
+    font-weight: 400;
+    font-size: 5em;
+    color: var(--glampink);
+    margin: 0;
+    text-align: center;
+}
+
 .Separator {
     display: flex;
     justify-content: center;
@@ -34,6 +43,9 @@
     .TitleContainer h1 {
         font-size: 3.5em;
     } 
+    .SecondTitleContainer h1 {
+        font-size: 3.5em;
+    }
     .Separator {
         height: 2em;
         padding: 5em 0 5em 0;
@@ -43,6 +55,9 @@
 @media (min-width: 700px) and (max-width: 1200px) {
 
     .TitleContainer h1 {
+        font-size: 4em;
+    }
+    .SecondTitleContainer h1 {
         font-size: 4em;
     }
     .Separator {

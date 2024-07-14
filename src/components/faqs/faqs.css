@@ -1,0 +1,99 @@
+.FaqsSection {
+    width: 90vw;
+    margin: 5em auto 0 auto;
+}
+
+.QuestionContainer {
+    background-color: rgba(16, 123, 152, 0.2);
+    border-bottom: solid 1px var(--glampink);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 20px 0 30px;
+}
+
+.selected {
+    border-bottom: solid 1px var(--glamblue)
+}
+
+.QuestionContainer h2{
+    font-family: 'Reem Kufi';
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    padding: 1em 0 1em 0;
+    margin: 0;
+}
+
+.OpenCloseButton {
+    margin: auto 30px auto auto;
+    padding: .3em;
+    background-color: hsla(342, 71%, 61%, 0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.line {
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: 50%;
+    border-radius: 25px;
+    left: 22%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.line1 {
+    transform: translateY(-50%) translateX(-10%) rotate(70deg);
+}
+
+.line2 {
+    transform: translateY(-50%) translateX(20%) rotate(-70deg); 
+}
+
+.OpenCloseButton.expended .line1 {
+    transform: translateY(-50%) translateX(5%) rotate(310deg);
+
+}
+
+.OpenCloseButton.expended .line2 {
+    transform: translateY(-50%) translateX(5%) rotate(-310deg); 
+}
+
+.AnswerContainer {
+    background-color: rgba(16, 123, 152, 0.2);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.open  {
+    height: 350px;
+}
+
+.AnswerContainer p {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 300;
+    font-size: 1.5em;
+    color: white;
+    padding: 2em 20px 2em 30px;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .QuestionContainer h2 {
+        font-size: 1.5em;
+    }
+    .AnswerContainer p {
+        font-size: 1.2em;
+    }
+    .open {
+        height: 400px;
+    }
+};

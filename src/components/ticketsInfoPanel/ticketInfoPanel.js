@@ -17,7 +17,7 @@ function TicketInfoPanel () {
 
                 <div className="InfoContainer">
                     <h2>INFORMATIONS & FAQS</h2>
-                    <Link>
+                    <Link to='/informations'>
                     <button>voir les informations</button>
                     </Link>
                 </div>

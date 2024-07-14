@@ -10,4 +10,5 @@ export const InformationViewModel = {
             informationDto.content._image
         );
     }
+    
 };
