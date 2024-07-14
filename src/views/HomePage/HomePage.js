@@ -9,6 +9,7 @@ import TRGJ from '../../assets/the rock greatest joyride.png'
 import Hero from '../../components/hero/hero';
 import Countdown from '../../components/countdown/countdown';
 import endingTime from '../../services/fakeDatas/countdown.json'
+import LineUpHomePage from '../../components/band/lineUpHomePage/lineUpHomePage';
 
 
 function HomePage () {
@@ -20,6 +21,7 @@ function HomePage () {
                 <div className='HomePageSloganContainer'>
                     <img src={WMRTS} alt="" />
                 </div>
+                <LineUpHomePage />
                 <div className='HomePageSloganContainer'>
                     <img src={TRGJ} alt="" />
                 </div>

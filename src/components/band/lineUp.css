@@ -7,21 +7,22 @@
 .AllBandContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     justify-items: center;
     align-items: baseline;
-    gap: 20px;
 }
 
 .BandContainer {
     position: relative;
     border-radius: 10px;
     transition: all 0.3s ease;
-    border: 1px solid var(--glampink);
 }
 
 a .BandContainer {
     width: 400px;
-    height: 301px;
+    height: 300px;
+    border: 1px solid var(--glampink);
+    position: relative;
 }
 
 .BandContainer img {
@@ -29,7 +30,6 @@ a .BandContainer {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    align-self: baseline;
     position: relative;
 }
 
@@ -43,11 +43,9 @@ a .BandContainer {
 }
 
 .BlackFilter {
-    position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 1px;
+    bottom: 0;
     border-radius: 10px;
     background: linear-gradient(to top, 
     rgba(0, 0, 0, 1) 0%,

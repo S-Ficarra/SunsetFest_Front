@@ -1,0 +1,32 @@
+.LineUpHomePageSection {
+    justify-content: center;
+    display: grid;
+}
+
+.LineUpHomePageSection a {
+    color: inherit;
+    text-decoration: none;
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+}
+
+.LineUpHomePageSection button {
+    padding: 1em;
+}
+
+.AllBandContainer {
+    margin-top: 5em;
+}
+
+.SecondTitleContainer p {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 300;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.BandContainer img {
+    border: 1px solid var(--glampink);
+}
