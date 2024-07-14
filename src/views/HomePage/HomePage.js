@@ -10,7 +10,7 @@ import Hero from '../../components/hero/hero';
 import Countdown from '../../components/countdown/countdown';
 import endingTime from '../../services/fakeDatas/countdown.json'
 import LineUpHomePage from '../../components/band/lineUpHomePage/lineUpHomePage';
-
+import NewsHomePage from '../../components/news/newsHomePage/newsHomePage';
 
 function HomePage () {
     return (
@@ -18,6 +18,7 @@ function HomePage () {
                 <NavBar />
                 <Hero />
                 <Countdown endingTime={endingTime.endingTime}/>
+                <NewsHomePage />
                 <div className='HomePageSloganContainer'>
                     <img src={WMRTS} alt="" />
                 </div>

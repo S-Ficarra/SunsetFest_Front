@@ -26,7 +26,7 @@ function Faqs () {
                             <div class="line line2"></div>
                         </div>
                     </div>
-                    <div className={`AnswerContainer ${openIndex === index ? 'open' : ''}`}>
+                    <div className={`AnswerContainer ${openIndex === index ? 'openFaq' : ''}`}>
                         <p>{faqs.answer}</p>
                     </div>
                 </div>

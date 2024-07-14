@@ -7,7 +7,8 @@ export const NewsViewModel = {
             newsDto.id,
             newsDto.content._title,
             newsDto.content._text,
-            newsDto.content._image
+            newsDto.content._image,
+            newsDto._createdAt
         );
     }
 };

@@ -12,7 +12,7 @@ function LineUpHomePage () {
         <section className="LineUpHomePageSection">
             <div className="SecondTitleContainer">
                 <h1>LINE-UP</h1>
-                <p>Plus de 30 groupes internationnaux</p>
+                <p>Plus de 30 groupes internationaux</p>
             </div>
             <div className="AllBandContainer">
                 {bands.slice(0, 8).map((band) => (

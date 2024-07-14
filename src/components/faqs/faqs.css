@@ -73,7 +73,7 @@
     transition: height 0.3s ease-out;
 }
 
-.open  {
+.openFaq  {
     height: 350px;
 }
 
@@ -93,7 +93,7 @@
     .AnswerContainer p {
         font-size: 1.2em;
     }
-    .open {
+    .openFaq {
         height: 400px;
     }
 };

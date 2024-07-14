@@ -14,9 +14,9 @@ const  HamburgerMenu= () => {
     return (
         <div className="hamburger-menu">
             <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className={`line ${isOpen ? 'line-1' : ''}`}></div>
-                <div className={`line ${isOpen ? 'line-2' : ''}`}></div>
-                <div className={`line ${isOpen ? 'line-3' : ''}`}></div>
+                <div className={`lineHam ${isOpen ? 'lineHam-1' : ''}`}></div>
+                <div className={`lineHam ${isOpen ? 'lineHam-2' : ''}`}></div>
+                <div className={`lineHam ${isOpen ? 'lineHam-3' : ''}`}></div>
             </div>
             <div className={`MenuLinksMobile ${isOpen ? 'open' : ''}`}>
                 <NavLink to="/actualites">ACTUALITÉS</NavLink>

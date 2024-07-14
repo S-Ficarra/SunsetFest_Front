@@ -1,0 +1,148 @@
+.RecentNewsCarouselSection {
+    margin-top: 5em;
+}
+
+.NewsContainerHomePage {
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--glampink);
+    transition: all 0.3s ease;
+}
+
+a .NewsContainerHomePage {
+    width: 35em;
+    height: 22em;
+}
+
+.NewsContainerHomePage img {
+    width: 35em;
+    height: 22em;
+    margin: auto;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    position: relative;
+}
+
+a .NewsContainerHomePage:hover {
+    box-shadow: 0 0 30px var(--glamblue);
+}
+
+.NewsContainerHomePage:hover .BlackFilter{
+    opacity: 1;
+}
+
+.BlackFilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%);;
+    opacity: 0;
+    transition: opacity 0.4s ease,
+}
+
+.NewsContainerHomePage h2 {
+    font-family: 'Reem Kufi';
+    font-size: 3em;
+    text-align: center;
+    color: var(--glamwhite);
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-shadow: 
+    -2px -2px 0 var(--glamblue),
+     2px -2px 0 var(--glamblue),
+    -2px  2px 0 var(--glamblue),
+     2px  2px 0 var(--glamblue);
+}
+
+.slick-prev::before,
+.slick-next::before,
+.slick-dots li button::before,
+.slick-dots li button::after {
+    content: none;
+}
+
+.slick-dots {
+    position: inherit;
+    bottom: inherit;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.slick-dots  li.slick-active button {
+    background: var(--glamblue);
+    border-radius: 25px;
+    border: solid 5px black;
+    padding: 1em;
+}
+
+
+.slick-dots li {
+    margin: 1em;
+    width: auto;
+    height: auto;
+    background: black;
+    border-radius: 25px;
+    border: solid 3px var(--glampink);
+    margin: 1em;
+}
+
+.slick-slide > div {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+  }
+
+.slick-active {
+    color: var(--glamblue);
+}
+
+.SectionButton {
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    justify-self: center;
+}
+
+.SectionButton a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.SectionButton button {
+    padding: 1em;
+}
+
+@media (min-width: 800px) and (max-width: 1299px) {
+    a .NewsContainerHomePage {
+        width: 25em;
+        height: 15em;
+    }
+
+    .NewsContainerHomePage img {
+        width: 25em;
+        height: 15em;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1800px) {
+    a .NewsContainerHomePage {
+        width: 25em;
+        height: 15em;
+    }
+    
+    .NewsContainerHomePage img {
+        width: 25em;
+        height: 15em;
+    }
+}
