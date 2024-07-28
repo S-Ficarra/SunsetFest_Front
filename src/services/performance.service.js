@@ -3,7 +3,7 @@ import { BASE_URL } from "../App";
 
 export const PerformanceService = {
 
-    async fetchPerformance() {
+    async fetchPerformances() {
       const response = await fetch(`${BASE_URL}performances`);
       const data = await response.json();
       return data.map(performance => new PerformanceDto(

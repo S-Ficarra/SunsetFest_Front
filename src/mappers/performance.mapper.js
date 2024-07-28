@@ -1,6 +1,6 @@
 import { PerformanceModel } from "../models/performance.model";
 
-export const PerformanceViewModel = {
+export const PerformanceMapper = {
     
     transformPerformanceDtoToPerformanceModel (performanceDto){
         return new PerformanceModel (

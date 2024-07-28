@@ -74,7 +74,7 @@
 }
 
 .openFaq  {
-    height: 350px;
+    height: fit-content;
 }
 
 .AnswerContainer p {
@@ -82,7 +82,7 @@
     font-weight: 300;
     font-size: 1.5em;
     color: white;
-    padding: 2em 20px 2em 30px;
+    padding: .5em 20px .5em 30px;
     margin: 0;
 }
 

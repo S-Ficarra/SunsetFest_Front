@@ -1,6 +1,6 @@
 import { InformationModel } from "../models/information.model";
 
-export const InformationViewModel = {
+export const InformationMapper = {
 
     transformInformationDtoToInformationModel (informationDto) {
         return new InformationModel (

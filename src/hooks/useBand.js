@@ -1,20 +1,19 @@
 import { useState, useEffect } from 'react';
-import { bandService } from '../services/band.service';
-import { bandViewModel } from '../viewModels/band.viewModel';
+import { GetBand } from '../controllers/band.controller';
 
 export const useBand = (bandId) => {
+
     const [band, setBand] = useState(null);
   
     useEffect(() => {
-      const fetchData = async () => {
-        const bandDto = await bandService.fetchBand(bandId);
-        const bandModel = bandViewModel.transformBandDtoToBandModel(bandDto);
-        setBand(bandModel);
+
+      const fetchBand = async () => {
+        const bandData = await GetBand(bandId);
+        setBand(bandData);
       };
   
-    fetchData();
-
+    fetchBand();
     }, [bandId]);
   
     return { band };
-  };
+};

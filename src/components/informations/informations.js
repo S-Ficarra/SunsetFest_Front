@@ -5,11 +5,11 @@ import { useAllInformations } from "../../hooks/useAllInformations";
 
 function Informations () {
 
-    const { informations } = useAllInformations();
+    const { allInformations } = useAllInformations();
 
     return (
         <section className="InformationSection">
-            {informations.map((information, index) => (
+            {allInformations.map((information, index) => (
                 <div className="InformationContainer" key={information.id}>
                     {index % 2 === 0 ? (
                         <>
@@ -19,7 +19,7 @@ function Informations () {
                             <div className="InformationContentContainer">
                                 <h1 className="right-align">{information.title.toUpperCase()}</h1>
                                 <div className="TextContainer">
-                                    <p>{information.text}</p>
+                                <div id="text" dangerouslySetInnerHTML={{ __html: information.text }}></div> 
                                 </div>
                             </div>
                         </>
@@ -28,7 +28,7 @@ function Informations () {
                             <div className="InformationContentContainer">
                                 <h1 className="left-align">{information.title.toUpperCase()}</h1>
                                 <div className="TextContainer">
-                                    <p>{information.text}</p>
+                                    <div id="text" dangerouslySetInnerHTML={{ __html: information.text }}></div> 
                                 </div>
                             </div>
                             <div className="InformationImgContainer">

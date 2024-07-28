@@ -1,6 +1,6 @@
 import { NewsModel } from "../models/news.model";
 
-export const NewsViewModel = {
+export const NewsMapper = {
 
     transformNewsDtoToNewsModel (newsDto) {
         return new NewsModel (

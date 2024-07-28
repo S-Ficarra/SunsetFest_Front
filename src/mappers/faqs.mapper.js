@@ -1,6 +1,6 @@
 import { FaqsModel } from "../models/faqs.model";
 
-export const FaqsViewModel = {
+export const FaqsMapper = {
 
     transformFaqsDtoToFaqsModel (faqsDto) {
         return new FaqsModel (

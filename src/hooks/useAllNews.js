@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
-import { NewsService } from '../services/news.service';
-import { NewsViewModel } from '../viewModels/news.viewModel';
+import { GetAllNews } from '../controllers/news.controller';
 
 export const useAllNews = () => {
 
-    const [news, setNews] = useState([]);
+    const [allNews, setAllNews] = useState([]);
 
     useEffect(() => {
-        NewsService.fetchAllNews().then(newsDtos => {
-            const newsModels = newsDtos.map(dto => NewsViewModel.transformNewsDtoToNewsModel(dto));
-            setNews(newsModels);
-        });
+        const fetchAllNews = async () => {
+            const newsModels = await GetAllNews();
+            setAllNews(newsModels);
+        };
+
+        fetchAllNews()
     }, []);
 
-    return { news };
+    return { allNews };
 };

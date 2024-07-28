@@ -22,7 +22,7 @@ function NavBar () {
                     <span>|</span>
                     <NavLink to='/informations'>INFORMATIONS</NavLink>
                     <span>|</span>
-                    <NavLink>CARTE</NavLink>
+                    <NavLink to='/carte'>CARTE</NavLink>
                 </div>
                 <HamburgerMenu />
                 </nav>

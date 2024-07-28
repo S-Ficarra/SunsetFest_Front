@@ -4,7 +4,7 @@ import { useAllFaqs } from "../../hooks/useAllFaqs";
 
 function Faqs () {
 
-    const { faqs } = useAllFaqs()
+    const { allFaqs } = useAllFaqs()
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleFaq = (index) => {
@@ -17,7 +17,7 @@ function Faqs () {
 
     return (
         <section className="FaqsSection">
-            {faqs.map((faqs, index) => (
+            {allFaqs.map((faqs, index) => (
                 <div key={index}>
                     <div className={`QuestionContainer ${openIndex === index ? 'selected' : ''}`} onClick={() => toggleFaq(index)}>
                         <h2>{faqs.question.toUpperCase()}</h2>
@@ -27,7 +27,7 @@ function Faqs () {
                         </div>
                     </div>
                     <div className={`AnswerContainer ${openIndex === index ? 'openFaq' : ''}`}>
-                        <p>{faqs.answer}</p>
+                        <div dangerouslySetInnerHTML={{ __html: faqs.answer }}></div>
                     </div>
                 </div>
             ))}

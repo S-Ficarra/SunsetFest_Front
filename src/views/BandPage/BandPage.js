@@ -1,7 +1,8 @@
 import React from "react";
+import {useBand} from '../../hooks/useBand'
+import {usePerformance} from '../../hooks/usePerformance'
 import './BandPage.css'
 import { useParams } from "react-router-dom";
-import { useBand } from "../../hooks/useBand";
 import NavBar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
@@ -13,13 +14,13 @@ import XLogo from '../../assets/socialsLogos/x-twitter.svg'
 import YoutLogo from '../../assets/socialsLogos/youtube.svg'
 import SpotLogo from '../../assets/socialsLogos/spotify.svg'
 import WebLogo from '../../assets/socialsLogos/globe-solid.svg'
-import { usePerformance } from "../../hooks/usePerformance";
 
 function BandPage () {
 
     const { id } = useParams();
-    const { band } = useBand(id);
-    const { performance } = usePerformance(band ? band.id : "");
+    const { band } = useBand(id)
+    const { performance } = usePerformance(id)
+
 
     if (!band || !performance) {
         return <div>Chargement...</div>;
@@ -29,11 +30,12 @@ function BandPage () {
     const day = date.toLocaleDateString('fr-FR', { weekday: 'long' });
     const time = date.toLocaleTimeString('fr-FR', { hour: '2-digit'});
 
+
     return (
         <>
             <NavBar />
             <div className="BandHeader">
-                <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
+                <img src={convertToBase64(band.bannerImage.data)} alt={band.name} />
                 <div className="HeaderBlackFilter"></div>
                 <div className="BandHeaderTextContainer">
                     <h1>{band.name.toUpperCase()}</h1>
@@ -44,7 +46,7 @@ function BandPage () {
             <iframe src={band.spotifyIntegrationLink} title="Spotify Player" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
             <section className="BandTextSection">
-                <p>{band.text}</p>
+                <div id="text" dangerouslySetInnerHTML={{ __html: band.text }}></div> 
             </section>
             <section className="PerformanceSection">
                 <div className="PerformanceStage"></div>
@@ -64,6 +66,7 @@ function BandPage () {
                     <a href={band.website} target="blank"><img src={WebLogo} alt="Notre channel Discord" /></a>
                 </div>
             </section>
+            
             <section className="YoutubeSection">
                 <iframe src={band.youtubeIntegrationLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
             </section>

@@ -28,7 +28,7 @@ function NewsPage () {
                 <h1>{news.title.toUpperCase()}</h1>
             </section>
             <section className="ContentContainer">
-                <p>{news.text}</p>
+                <div id="text" dangerouslySetInnerHTML={{ __html: news.text }}></div> 
             </section>
             <div className="Separator">
                 <img src={SkullLogo} alt="Notre logo" />

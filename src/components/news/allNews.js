@@ -6,13 +6,13 @@ import './allNews.css'
 
 function AllNews () {
 
-    const { news } = useAllNews();
+    const { allNews } = useAllNews();
 
     return (
         <section className="AllNewsSection">
             <div className="AllNewsContainer">
-                {news.map((news) => (
-                    <Link to={`/actualites/${news.id}/${encodeURIComponent(news.title.replace(/\s/g, '-'))}`}>
+                {allNews.map((news) => (
+                    <Link to={`/actualites/${news.id}/${encodeURIComponent(news.title.replace(/\s/g, '-'))}`} key={news.id}>
                         <div className="NewsContainer">
                         <img src={convertToBase64(news.image.data)} alt={news.title} />
                         <div className="BlackFilter"></div>

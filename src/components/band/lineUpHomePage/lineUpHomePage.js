@@ -16,8 +16,8 @@ function LineUpHomePage () {
             </div>
             <div className="AllBandContainer">
                 {bands.slice(0, 8).map((band) => (
-                    <div className="BandContainer">
-                        <img src={convertToBase64(band.bannerImage.data)} alt={band.name} />
+                    <div className="BandContainer" key={band.id}>
+                        <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
                         <div className="BlackFilter"></div>
                         <h2>{band.name}</h2>
                     </div>

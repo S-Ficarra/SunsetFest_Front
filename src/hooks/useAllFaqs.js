@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react';
-import { FaqsService } from '../services/faqs.service';
-import { FaqsViewModel } from '../viewModels/faqs.viewModel';
+import { GetAllFaqs } from '../controllers/faqs.controller';
 
 export const useAllFaqs = () => {
 
-    const [faqs, setFaqs] = useState([]);
+    const [allFaqs, setAllFaqs] = useState([]);
 
     useEffect(() => {
-        FaqsService.fetchAllFaqs().then(faqDto => {
-            const faqsModel = faqDto.map(dto => FaqsViewModel.transformFaqsDtoToFaqsModel(dto));
-            setFaqs(faqsModel);
-        });
+        const fetchAllFaqs = async () => {
+            const faqsModel = await GetAllFaqs();
+            setAllFaqs(faqsModel);
+            }
+
+        fetchAllFaqs();
     }, []);
 
-    return { faqs };
+    return { allFaqs };
+
 };

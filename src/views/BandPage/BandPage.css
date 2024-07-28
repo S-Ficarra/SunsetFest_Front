@@ -90,6 +90,12 @@
     justify-content: center;
 }
 
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .BandTextSection p{
     width: 60%;
     color: var(--glamwhite);
@@ -97,6 +103,7 @@
     font-size: 2em;
     font-weight: 300;
     text-align: justify;
+    margin: .5em;
 }
 
 .YoutubeSection {

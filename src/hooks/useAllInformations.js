@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
-import { InformationService } from '../services/information.service';
-import { InformationViewModel } from '../viewModels/information.viewModel';
+import { GetAllInformations } from '../controllers/informations.controller';
 
 export const useAllInformations = () => {
 
-    const [informations, setInformations] = useState([]);
+    const [allInformations, setAllInformations] = useState([]);
 
     useEffect(() => {
-        InformationService.fetchAllInformation().then(informationsDto => {
-            const informationsModel = informationsDto.map(dto => InformationViewModel.transformInformationDtoToInformationModel(dto));
-            setInformations(informationsModel);
-        });
+        const fetchAllInformation = async () => {
+            const informationsModel = await GetAllInformations()
+            setAllInformations(informationsModel);
+        };
+
+        fetchAllInformation()
     }, []);
 
-    return { informations };
+    return { allInformations };
 };

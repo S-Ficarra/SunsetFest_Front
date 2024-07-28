@@ -1,6 +1,6 @@
 import { BandModel } from '../models/band.model';
 
-export const bandViewModel = {
+export const BandMapper = {
   transformBandDtoToBandModel(bandDto) {
     return new BandModel(
         bandDto.id,

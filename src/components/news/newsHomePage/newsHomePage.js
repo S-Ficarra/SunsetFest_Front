@@ -9,13 +9,15 @@ import './newsHomePage.css';
 
 function NewsHomePage () {
 
-    const { news } = useAllNews();
+    const { allNews } = useAllNews();
 
-    const sortedNews = [...news].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 5);
+    const sortedNews = [...allNews].slice(0, 5);
+    
+
 
     const settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -25,17 +27,17 @@ function NewsHomePage () {
         centerPadding: '0',
         responsive: [
             {
-                breakpoint: 1299, // Taille d'écran en pixels
+                breakpoint: 1299,
                 settings: {
-                    slidesToShow: 2, // Nombre de slides à afficher pour les écrans de taille moyenne
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     centerMode: true,
                 }
             },
             {
-                breakpoint: 850, // Taille d'écran en pixels
+                breakpoint: 850,
                 settings: {
-                    slidesToShow: 1, // Nombre de slides à afficher pour les petits écrans
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
                 }

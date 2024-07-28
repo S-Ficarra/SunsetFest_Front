@@ -95,6 +95,10 @@ a .NewsContainerHomePage:hover {
     margin: 1em;
 }
 
+.slick-dots li button:hover {
+    box-shadow: none;
+}
+
 .slick-slide > div {
     display: grid;
     width: 90%;
@@ -121,6 +125,18 @@ a .NewsContainerHomePage:hover {
 
 .SectionButton button {
     padding: 1em;
+}
+
+@media (min-width: 300px) and (max-width: 799px) {
+    a .NewsContainerHomePage {
+        width: 20em;
+        height: 10em;
+    }
+
+    .NewsContainerHomePage img {
+        width: 20em;
+        height: 10em;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1299px) {
