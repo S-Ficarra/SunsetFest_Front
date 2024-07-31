@@ -8,6 +8,13 @@ export function getTimeDifference (endingTime) {
     return new Date(endingTime) - new Date () 
 }
 
+export const getTime = (dateString) => {
+    const date = new Date(dateString);
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    return `${hours}h${minutes.toString().padStart(2, '0')}`;
+};
+
 export function formatCountdown (timeDifference) {
     let timeDifferenceSeconds = timeDifference / 1000;
     let timeDifferenceMinutes = timeDifferenceSeconds / 60;

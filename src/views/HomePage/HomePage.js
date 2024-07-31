@@ -11,6 +11,7 @@ import Countdown from '../../components/countdown/countdown';
 import endingTime from '../../services/fakeDatas/countdown.json'
 import LineUpHomePage from '../../components/band/lineUpHomePage/lineUpHomePage';
 import NewsHomePage from '../../components/news/newsHomePage/newsHomePage';
+import FestivalMap from '../../components/map/festivalMap/festivalMap';
 
 function HomePage () {
     return (
@@ -26,6 +27,11 @@ function HomePage () {
                 <div className='HomePageSloganContainer'>
                     <img src={TRGJ} alt="" />
                 </div>
+                <div className="SecondTitleContainer">
+                    <h1>CARTE</h1>
+                    <p>Découvrez les points d'intérêt du festival</p>
+                </div>
+                <FestivalMap />
                 <TicketInfoPanel />
                 <Footer />
             </>

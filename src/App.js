@@ -15,7 +15,7 @@ import SucessPage from './views/SucessPage/SucessPage';
 import AllNewsPage from './views/AllNewsPage/AllNewsPage';
 import NewsPage from './views/NewsPage/NewsPage';
 import InformationPage from './views/InformationPage/InformationPage';
-import Map from './components/map/map';
+import MapPage from './views/MapPage/MapPage';
 
 export const BASE_URL = 'http://localhost:3000/'
 
@@ -42,7 +42,7 @@ function App() {
           <Route path='/mentionlegales' element={<LegalNoticePage/>}/>
           <Route path='/presse' element={<PressPage/>}/>
           <Route path='/sucess' element={<SucessPage/>}/>
-          <Route path='/carte' element={<Map/>}/>
+          <Route path='/carte' element={<MapPage/>}/>
         </Routes>
       </div>
     </BrowserRouter>
