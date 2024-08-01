@@ -1,0 +1,118 @@
+.AllStageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.AllStageContainer h2 {   
+    margin-top: 0;
+}
+
+.TimeListContainer {
+    display: grid;
+    width: 10%;
+    grid-template-rows: repeat(6 ,1fr);
+}
+
+.TimeListContainer h2 {
+    font-family: 'Reem Kufi';
+    font-size: 1.5em;
+    color: white;
+    padding-top: .5em;
+    border-top: solid 1px var(--glamblue);
+}
+
+.StageContainer {
+    display: grid;
+    grid-template-rows: repeat(6 ,1fr);
+    margin: 1em;
+    width: 20em;
+    text-align: center;
+    border-radius: 10px;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.column1 {
+    background-color: rgba(16, 123, 152, 0.1);
+    box-shadow: 0 0 20px rgba(16, 123, 152, 0.2);
+}
+
+.column3 {
+    background-color: rgba(16, 123, 152, 0.1);
+    box-shadow: 0 0 20px rgba(16, 123, 152, 0.2);
+}
+
+.StageContainer h1 {
+    color: white;
+    font-family: 'Reem Kufi';
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.PerformanceContainer {
+    width: 100%;
+    height: 15em;
+    border: 1px solid var(--glampink);
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.PerformanceContainer p {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 600;
+    font-size: 2.5em;
+    position: absolute;
+}
+
+.PerformanceContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.BlackFilter {
+    opacity: 1;
+    background: linear-gradient(to top, 
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, .2) 100%);
+}
+
+.top-row {
+    height: 30%;
+    grid-row: 1;
+    background-color: black;
+    padding: 1em;
+    border: solid 1px var(--glampink);
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--glamblue);
+    text-shadow: 
+        -1px -1px 0 var(--glampink),
+        1px -1px 0 var(--glampink),
+        -1px 1px 0 var(--glampink),
+        1px 1px 0 var(--glampink);
+}
+
+.row-14 {
+    grid-row: 2;
+}
+.row-16 {
+    grid-row: 3;
+}
+.row-18 {
+    grid-row: 4;
+}
+.row-20 {
+    grid-row: 5;
+}
+.row-22 {
+    grid-row: 6;
+}

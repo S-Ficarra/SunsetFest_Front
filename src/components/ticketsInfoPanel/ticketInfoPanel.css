@@ -61,7 +61,7 @@
     font-weight: 300;
 }
 
-button {
+.TicketsInfoPanel button {
     all: unset;
     border: solid 3px var(--glampink);
     padding: .5em 1em .5em 1em;
@@ -70,7 +70,7 @@ button {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-button:hover {
+.TicketsInfoPanel button:hover {
     background-color: rgba(226, 85, 127, 0.3);
     box-shadow: var(--glamblue) 0px 0px 10px;
     transition: background-color 0.2s ease-in;

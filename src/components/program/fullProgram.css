@@ -1,0 +1,36 @@
+.ProgramButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    width: 90%;
+}
+
+.ProgramButton {
+    all: unset;
+    text-align: center;
+    font-family: 'Reem Kufi';
+    font-size: 2em;
+    padding: 1em;
+    width: 15%;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(16, 123, 152, 0.3);
+    box-shadow: 0 0 10px var(--glamblue);
+    transition: all .3s ease;
+}
+
+.button2 {
+    border-right: solid 1px var(--glampink);
+    border-left: solid 1px var(--glampink);
+    z-index: 1;
+}
+
+.ProgramButton:hover {
+    background-color: rgba(226, 85, 127, 0.7);
+}
+
+#Selected {
+    background-color: rgba(16, 123, 152, 0.7);
+}

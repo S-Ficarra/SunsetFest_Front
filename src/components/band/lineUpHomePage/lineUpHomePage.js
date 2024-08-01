@@ -23,7 +23,7 @@ function LineUpHomePage () {
                     </div>
                 ))}
             </div>
-            <Link to='/lineup'><button>VOIR LE LINE-UP COMPLET</button></Link>
+            <Link to='/lineup' className="SectionButton"><button>VOIR LE LINE-UP COMPLET</button></Link>
         </section>
     );
 };

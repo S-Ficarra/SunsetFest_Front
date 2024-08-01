@@ -13,8 +13,6 @@ function NewsHomePage () {
 
     const sortedNews = [...allNews].slice(0, 5);
     
-
-
     const settings = {
         dots: true,
         infinite: false,

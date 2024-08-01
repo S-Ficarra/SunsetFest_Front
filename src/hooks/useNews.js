@@ -14,4 +14,5 @@ export const useNews = (newsId) => {
     }, [newsId]);
 
     return { news };
+    
 };

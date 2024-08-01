@@ -1,24 +1,19 @@
 import React from "react";
-import './LineUpPage.css'
-import { Link } from "react-router-dom";
 import NavBar from "../../components/navbar/navbar";
+import FullProgram from "../../components/program/fullProgram";
 import TicketInfoPanel from "../../components/ticketsInfoPanel/ticketInfoPanel";
 import Footer from "../../components/footer/footer";
-import LineUp from "../../components/band/lineUp";
 import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
 
 
-function LineUpPage () {
+function ProgramPage () {
     return (
         <>
             <NavBar />
             <div className="TitleContainer">
-                <h1>LINE-UP</h1>
+                <h1>PROGRAMME</h1>
             </div>
-            <div className="SectionButton">
-                <Link to='/programme' ><button>VOIR LE PROGRAMME DU FESTIVAL</button></Link>
-            </div>
-            <LineUp />
+            <FullProgram />
             <div className="Separator">
                 <img src={SkullLogo} alt="Notre logo" />
             </div>
@@ -27,4 +22,4 @@ function LineUpPage () {
         </>
     );
 }
-export default LineUpPage;
+export default ProgramPage;
