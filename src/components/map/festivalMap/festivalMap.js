@@ -45,7 +45,9 @@ function FestivalMap() {
     return (
         <div className="MapContainer">
             <div id="map">
-            <Filters filters={filters} onFilterChange={handleFilterChange} />
+                <div>
+                    <Filters filters={filters} onFilterChange={handleFilterChange} />
+                </div>
                 <APIProvider apiKey={process.env.REACT_APP_GOOGLE_API_KEY} onLoad={() => console.log('Maps API has loaded.')}>
                     <Map
                         defaultZoom={15}
