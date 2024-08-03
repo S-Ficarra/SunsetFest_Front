@@ -34,3 +34,12 @@
 #Selected {
     background-color: rgba(16, 123, 152, 0.7);
 }
+
+@media (max-width: 900px) {
+    .ProgramButton { 
+        font-size: 1em;
+        width: 20%;
+    }
+
+    
+}

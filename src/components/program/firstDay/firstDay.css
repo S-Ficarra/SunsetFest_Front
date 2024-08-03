@@ -116,3 +116,39 @@
 .row-22 {
     grid-row: 6;
 }
+
+@media (max-width: 1100px) {
+    .AllStageContainer {
+        width: 100%;
+        overflow: scroll;
+        justify-content: unset;
+    }
+    .top-row {
+        height: fit-content;
+        grid-row: 1;
+        padding: .5em;
+
+    }
+    .StageContainer {
+        margin: .5em;
+    }
+    .StageContainer h1 {
+        color: white;
+        font-family: 'Reem Kufi';
+        font-size: 1em;
+        font-weight: 800;
+    }
+    .PerformanceContainer {
+        height: fit-content;
+
+    }
+    .PerformanceContainer p {
+        font-size: 1em;
+        position: relative;
+    }
+    .PerformanceContainer img {
+        display: none;
+    }
+    
+
+}
