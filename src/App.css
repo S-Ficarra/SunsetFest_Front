@@ -17,13 +17,184 @@
     --glamgradient: linear-gradient(to bottom, #107a98, #e2557f);
 }
 
+
 body {
     background-image: url('../src/assets/blackLeppardBackground.png') ;
     background-size: contain;
-    background-size: 100%;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlackPinkButtonSmall {
+    margin: 3em;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 2px var(--glampink);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all .3s ease;
+}
+
+.BlackPinkButtonSmall:hover {
+    background-color: hsla(342, 71%, 61%, 0.3);
+    box-shadow: 0 0 20px var(--glamblue);
+}
+
+.BlackBlueButtonSmall {
+    margin: 3em auto 0 auto;
+    font-family: "Alegreya Sans SC";
+    font-size: 2em;
+    border-radius: 10px;
+    padding: .3em .7em;
+    border: 2px solid var(--glamblue);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all .3s ease;
+}
+
+.BlackBlueButtonSmall:hover {
+    background-color: rgba(16, 123, 152, 0.5);
+    box-shadow: 0 0 20px var(--glamblue);
+}
+
+.TitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+.TitleContainer h1 {
+    font-family: 'Reem Kufi';
+    font-weight: 400;
+    font-size: 5em;
+    color: var(--glampink);
+    margin: 0;
+    text-align: center;
+}
+
+.SecondTitleContainer h1 {
+    font-family: 'Reem Kufi';
+    font-weight: 400;
+    font-size: 5em;
+    color: var(--glampink);
+    margin: 0;
+    text-align: center;
+}
+
+.Separator {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Separator {
+    height: 7em;
+    padding: 10em 0 10em 0;
+}
+
+
+.FormContainer {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.FormContainer form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.FormHead {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.FormField input {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans SC";
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--glamwhite);
+    border-radius: 10px;
+    border: none;
+    background-color: hsla(193, 81%, 33%, 0.5);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.FormField input::placeholder {
+    color: var(--glamwhite);
+}
+
+.FormField input:hover,
+.FormField input:focus {
+    border: 1px solid var(--glampink);
+    outline: 1px solid var(--glampink);;
+    box-shadow: 0 0 20px var(--glamblue);
+}
+
+.ParagraphContainer p {
+    font-size: 1.5em;
+    color: var(--glamwhite);
+    font-family: 'Alegreya Sans SC';
+    font-weight: 300;
+    text-align: justify;
+}
+
+.ParagraphContainer {
+    margin: 3em auto ;
+    width: 65vw;
+}
+
+
+@media (max-width: 700px) {
+    .TitleContainer h1 {
+        font-size: 3.5em;
+    } 
+    .SecondTitleContainer h1 {
+        font-size: 3.5em;
+    }
+    .Separator {
+        height: 2em;
+        padding: 5em 0 5em 0;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+
+    .TitleContainer h1 {
+        font-size: 4em;
+    }
+    .SecondTitleContainer h1 {
+        font-size: 4em;
+    }
+    .Separator {
+        height: 4em;
+        padding: 7em 0 7em 0;
+    }
+}

@@ -111,31 +111,6 @@ a .NewsContainerHomePage:hover {
     color: var(--glamblue);
 }
 
-.SectionButton {
-    margin-top: 3em;
-    text-align: center;
-    font-family: 'Alegreya Sans SC';
-    justify-self: center;
-}
-
-.SectionButton a{
-    color: inherit;
-    text-decoration: none;
-}
-
-.SectionButton button {
-    padding: 1em;
-    border-radius: 10px;
-    border: solid 2px var(--glampink);
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    transition: all .3s ease;
-}
-
-.SectionButton button:hover {
-    background-color: hsla(342, 71%, 61%, 0.3);
-    box-shadow: 0 0 20px var(--glamblue);
-}
 
 @media (min-width: 300px) and (max-width: 799px) {
     a .NewsContainerHomePage {

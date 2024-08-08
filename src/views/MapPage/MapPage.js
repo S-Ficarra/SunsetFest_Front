@@ -15,8 +15,8 @@ function MapPage () {
                 <h1>CARTE</h1>
             </div>
             <FestivalMap />
-            <div className="SectionButton">
-                <Link to='/programme' ><button>VOIR LE PROGRAMME DU FESTIVAL</button></Link>
+            <div className="ButtonContainer">
+                <Link to='/programme'><button className="BlackPinkButtonSmall">VOIR LE PROGRAMME DU FESTIVAL</button></Link>
             </div>
             <div className="Separator">
                 <img src={SkullLogo} alt="Notre logo" />

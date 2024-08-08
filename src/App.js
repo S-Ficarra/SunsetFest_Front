@@ -1,8 +1,7 @@
 import React from 'react';
+import './normalize.css'
+import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '../src/components/normalize.css'
-import '../src/components/common.css'
-import '../src/App.css'
 import HomePage from './views/HomePage/HomePage';
 import CookiesPage from './views/CompliancePages/CookiesPage'
 import LegalNoticePage from './views/CompliancePages/LegalNoticePage';

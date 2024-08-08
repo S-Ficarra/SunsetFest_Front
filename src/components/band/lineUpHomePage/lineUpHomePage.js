@@ -3,6 +3,7 @@ import { convertToBase64 } from "../../../services/utils";
 import './lineUpHomePage.css'
 import { Link } from "react-router-dom";
 import { useAllBands } from "../../../hooks/useAllBands";
+import '../../../App.css'
 
 function LineUpHomePage () {
 
@@ -23,7 +24,9 @@ function LineUpHomePage () {
                     </div>
                 ))}
             </div>
-            <Link to='/lineup' className="SectionButton"><button>VOIR LE LINE-UP COMPLET</button></Link>
+            <div className="ButtonContainer">
+                <Link to='/lineup'><button className="BlackPinkButtonSmall">VOIR LE LINE-UP COMPLET</button></Link>
+            </div>
         </section>
     );
 };

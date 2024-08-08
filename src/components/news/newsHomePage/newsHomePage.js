@@ -62,8 +62,8 @@ function NewsHomePage () {
                     </div>
                 ))}
             </Slider>
-            <div className="SectionButton">
-                <Link to='/actualites'><button>VOIR TOUTES LES ACTUALITÉS</button></Link>
+            <div className="ButtonContainer">
+                <Link to='/actualites'><button className="BlackPinkButtonSmall">VOIR TOUTES LES ACTUALITÉS</button></Link>
             </div>
         </section>
     );

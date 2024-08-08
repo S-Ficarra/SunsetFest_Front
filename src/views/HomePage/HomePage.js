@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css'
 import './HomePage.css';
+import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/navbar'
 import TicketInfoPanel from '../../components/ticketsInfoPanel/ticketInfoPanel';
 import Footer from '../../components/footer/footer';
@@ -32,6 +33,9 @@ function HomePage () {
                     <p>Découvrez les points d'intérêt du festival</p>
                 </div>
                 <FestivalMap />
+                <div className='ButtonContainer'>
+                    <Link to='/carte'><button className='BlackPinkButtonSmall'>VOIR LA CARTE</button></Link>
+                </div>
                 <TicketInfoPanel />
                 <Footer />
             </>

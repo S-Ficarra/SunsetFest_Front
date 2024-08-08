@@ -179,6 +179,8 @@
 @media (min-width: 850px) and (max-width: 1750px) {
     .SocialsContainer{
         width: 50vw;
+        display: flex;
+        justify-content: center;
     }
 }
 

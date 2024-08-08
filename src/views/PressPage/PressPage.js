@@ -49,7 +49,9 @@ function PressPage () {
                         <input type="file" placeholder="LIEN PRINCIPAL DE VOTRE MÉDIA" required/>
                         <p>Veuillez joindre votre carte de presse</p>
                     </div>
-                    <button>ENVOYER</button>
+                    <div className="ButtonContainer">
+                        <button className="BlackBlueButtonSmall">ENVOYER</button>
+                    </div>
                 </form>
             </div>
             <div className="Separator">

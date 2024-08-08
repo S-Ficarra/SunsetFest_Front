@@ -46,7 +46,9 @@ function ContactPage () {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at dicta accusamus similique numquam! Modi cum inventore eaque impedit perspiciatis non nemo unde eligendi, tenetur veritatis? Qui natus quasi quod.
                         </p>
                     </div>
-                    <button>ENVOYER</button>
+                    <div className="ButtonContainer">
+                        <button className="BlackBlueButtonSmall">ENVOYER</button>
+                    </div>
                 </form>
             </div>
             <div className="Separator">

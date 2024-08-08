@@ -1,15 +1,3 @@
-.ParagraphContainer {
-    width: 65vw;
-    margin: 0 auto;
-}
-
-.ParagraphContainer p {
-    color: var(--glamwhite);
-    font-family: 'Alegreya Sans SC';
-    font-size: 2.5em;
-    font-weight: 300;
-    text-align: justify;
-}
 
 .ParagraphContainer p:last-child {
     margin-bottom: 0;
