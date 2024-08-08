@@ -22,7 +22,7 @@ function SecondDay ({performances}) {
             <div className="StageContainer column1">
                 <h1 className="top-row">SCENE<br/>ROXY</h1>
                 {saturdayPerfs
-                    .filter(performance => performance._stage._name === "roxy")
+                    .filter(performance => String(performance._stage._id) === '1')
                     .map(performance => {
                         const time =  new Date (performance._timeFrame._startingTime)
                         const hour = time.getHours()
@@ -37,7 +37,7 @@ function SecondDay ({performances}) {
             <div className="StageContainer">
                 <h1 className="top-row">SCENE<br/>RAINBOW</h1>
                 {saturdayPerfs
-                    .filter(performance => performance._stage._name === "rainbow")
+                    .filter(performance => String(performance._stage._id) === '2')
                     .map(performance => {
                         const time =  new Date (performance._timeFrame._startingTime)
                         const hour = time.getHours()
@@ -52,7 +52,7 @@ function SecondDay ({performances}) {
             <div className="StageContainer column3">
                 <h1 className="top-row">SCENE<br/>WHISKEY</h1>
                 {saturdayPerfs
-                    .filter(performance => performance._stage._name === "whiskey")
+                    .filter(performance => String(performance._stage._id) === '3')
                     .map(performance => {
                         const time =  new Date (performance._timeFrame._startingTime)
                         const hour = time.getHours()
@@ -67,7 +67,7 @@ function SecondDay ({performances}) {
             <div className="StageContainer">
                 <h1 className="top-row">SCENE<br/>VIPER</h1>
                 {saturdayPerfs
-                    .filter(performance => performance._stage._name === "viper")
+                    .filter(performance => String(performance._stage._id) === '4')
                     .map(performance => {
                         const time =  new Date (performance._timeFrame._startingTime)
                         const hour = time.getHours()
