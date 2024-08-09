@@ -1,7 +1,7 @@
 import React from "react";
 import { convertToBase64 } from "../../../services/utils";
 import { Link } from "react-router-dom";
-import { useAllNews } from "../../../hooks/useAllNews";
+import { useAllNews } from "../../../hooks/Publications/useAllNews";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

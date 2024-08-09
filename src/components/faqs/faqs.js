@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './faqs.css'
-import { useAllFaqs } from "../../hooks/useAllFaqs";
+import { useAllFaqs } from "../../hooks/Publications/useAllFaqs";
 
 function Faqs () {
 

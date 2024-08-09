@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GetAllInformations } from '../controllers/informations.controller';
+import { GetAllInformations } from '../../controllers/informations.controller';
 
 export const useAllInformations = () => {
 

@@ -2,7 +2,7 @@ import React from "react";
 import './NewsPage.css'
 import { convertToBase64 } from "../../services/utils";
 import { useParams } from "react-router-dom";
-import { useNews } from "../../hooks/useNews";
+import { useNews } from "../../hooks/Publications/useNews";
 import NavBar from "../../components/navbar/navbar";
 import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
 import TicketInfoPanel from "../../components/ticketsInfoPanel/ticketInfoPanel";

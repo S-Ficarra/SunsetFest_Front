@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GetAllNews } from '../controllers/news.controller';
+import { GetAllNews } from '../../controllers/news.controller';
 
 export const useAllNews = () => {
 

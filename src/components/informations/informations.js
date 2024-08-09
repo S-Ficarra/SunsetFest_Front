@@ -1,7 +1,7 @@
 import React from "react";
 import { convertToBase64 } from "../../services/utils";
 import './informations.css'
-import { useAllInformations } from "../../hooks/useAllInformations";
+import { useAllInformations } from "../../hooks/Publications/useAllInformations";
 
 function Informations () {
 

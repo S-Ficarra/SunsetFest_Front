@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GetAllFaqs } from '../controllers/faqs.controller';
+import { GetAllFaqs } from '../../controllers/faqs.controller';
 
 export const useAllFaqs = () => {
 

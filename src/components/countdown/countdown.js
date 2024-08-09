@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { updateCountdown } from "../../services/utils";
 import './countdown.css'
+import { useScreenSize } from "../../hooks/useScreenSize";
 
 
 function Countdown ({endingTime}) {
 
     const [countdown, setCountdown] = useState(updateCountdown(endingTime));
-    const [screenSize, setScreenSize] = useState(window.innerWidth);
+    const { screenSize } = useScreenSize()
 
-
+    
     useEffect(() => {
         const intervalId = setInterval(() => {
           setCountdown(updateCountdown(endingTime));
@@ -17,11 +18,7 @@ function Countdown ({endingTime}) {
         return () => clearInterval(intervalId);
       }, [endingTime]);
 
-    useEffect(() => {
-        const handleResize = () => setScreenSize(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+
 
     return (
         <section className="SectionContainer">
