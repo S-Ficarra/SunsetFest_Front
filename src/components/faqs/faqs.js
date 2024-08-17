@@ -22,8 +22,8 @@ function Faqs () {
                     <div className={`QuestionContainer ${openIndex === index ? 'selected' : ''}`} onClick={() => toggleFaq(index)}>
                         <h2>{faqs.question.toUpperCase()}</h2>
                         <div className={`OpenCloseButton ${openIndex === index ? 'expended' : ''}`}>
-                            <div class="line line1" ></div>
-                            <div class="line line2"></div>
+                            <div className="line line1" ></div>
+                            <div className="line line2"></div>
                         </div>
                     </div>
                     <div className={`AnswerContainer ${openIndex === index ? 'openFaq' : ''}`}>

@@ -55,7 +55,7 @@ function Filters ({ filters, onFilterChange }) {
                 </label>
                 <label>
                     <input type="checkbox" checked={filters.merchandisings} onChange={() => onFilterChange('merchandisings')} />
-                    Marchandises
+                    Boutiques
                     <div className="IconContainer" style={{ backgroundColor: 'purple' }}>
                         <img src={ShopIcon} alt="Marchandises" />
                     </div>

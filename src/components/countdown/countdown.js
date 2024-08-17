@@ -8,8 +8,8 @@ import { useCountdown } from "../../hooks/useCountdown";
 function Countdown () {
   
   const { screenSize } = useScreenSize();
-  const { endingTime } = useCountdown(2)
-  const [timeLeft, setTimeLeft] = useState(updateCountdown(endingTime));
+  const { endingTime } = useCountdown(2) 
+  const [timeLeft, setTimeLeft] = useState(updateCountdown(endingTime)); 
 
   useEffect(() => {
         if (!endingTime) return;

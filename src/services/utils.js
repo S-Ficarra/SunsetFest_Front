@@ -4,9 +4,6 @@ export function formatDate(date) {
     return new Date(date).toLocaleDateString('fr-FR', options);
   };
 
-export function getTimeDifference (endingTime) {
-    return new Date(endingTime) - new Date () 
-}
 
 export const getTime = (dateString) => {
     const date = new Date(dateString);
@@ -29,8 +26,12 @@ export function formatCountdown (timeDifference) {
     return {days: days, hours: hours, minutes: minutes, seconds: seconds};
 };
 
+export function getTimeDifference (endingTime) {   
+    return new Date(endingTime) - new Date () 
+}
+
 export function updateCountdown (endingTime) {
-    let timeDifference = getTimeDifference(endingTime);
+    let timeDifference = getTimeDifference(endingTime);         
     return formatCountdown(timeDifference);
 }; 
 

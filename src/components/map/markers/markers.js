@@ -11,6 +11,9 @@ function Markers({ dataArray, backgroundColor, Img}) {
   const handleMarkerClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
+
+  console.log(dataArray);
+  
   
 
   return (
@@ -29,7 +32,7 @@ function Markers({ dataArray, backgroundColor, Img}) {
               scale={1.5}
             >
             <div style={{ width: '100%', display:'flex', justifyContent:'center'}}>
-              <img src={Img} alt="icon" style={{ width: '75%'}} />
+              <img src={Img} alt={`${data.type}`} style={{ width: '75%'}} />
             </div>
             </Pin>
           </AdvancedMarker>

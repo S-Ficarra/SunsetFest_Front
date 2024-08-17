@@ -62,6 +62,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    box-shadow: 0 0 20px var(--glamblue);
 }
 
 .PerformanceContainer p {
