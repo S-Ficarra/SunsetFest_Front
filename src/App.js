@@ -10,7 +10,6 @@ import LineUpPage from './views/LineUpPage/LineUpPage';
 import BandPage from './views/BandPage/BandPage';
 import ContactPage from './views/ContactPage/ContactPage';
 import PressPage from './views/PressPage/PressPage';
-import SucessPage from './views/SucessPage/SucessPage';
 import AllNewsPage from './views/AllNewsPage/AllNewsPage';
 import NewsPage from './views/NewsPage/NewsPage';
 import InformationPage from './views/InformationPage/InformationPage';
@@ -41,7 +40,6 @@ function App() {
           <Route path='/cookies' element={<CookiesPage/>}/>
           <Route path='/mentionlegales' element={<LegalNoticePage/>}/>
           <Route path='/presse' element={<PressPage/>}/>
-          <Route path='/sucess' element={<SucessPage/>}/>
           <Route path='/carte' element={<MapPage/>}/>
           <Route path='/programme' element={<ProgramPage/>}/>
         </Routes>

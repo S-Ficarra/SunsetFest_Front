@@ -1,5 +1,5 @@
-import { StageDto } from "../dto/stage.dto";
-import { BASE_URL } from "../App";
+import { StageDto } from "../../dto/stage.dto";
+import { BASE_URL } from "../../App";
 
 export const StageService = {
 

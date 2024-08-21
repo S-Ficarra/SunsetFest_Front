@@ -1,5 +1,5 @@
-import { FaqsDto } from "../dto/faqs.dto";
-import { BASE_URL } from "../App";
+import { FaqsDto } from "../../dto/faqs.dto";
+import { BASE_URL } from "../../App";
 
 export const FaqsService = {
 

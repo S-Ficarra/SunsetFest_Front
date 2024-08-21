@@ -1,4 +1,4 @@
-import { NewsService } from "../services/news.service";
+import { NewsService } from "../services/Publications/news.service";
 import { NewsMapper } from "../mappers/news.mapper";
 
 export const GetAllNews = async () => {

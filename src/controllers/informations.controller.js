@@ -1,4 +1,4 @@
-import { InformationService } from "../services/information.service";
+import { InformationService } from "../services/Publications/information.service";
 import { InformationMapper } from "../mappers/information.mapper";
 
 export const GetAllInformations = async () => {

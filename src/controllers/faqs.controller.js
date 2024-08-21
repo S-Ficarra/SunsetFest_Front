@@ -1,4 +1,4 @@
-import { FaqsService } from "../services/faqs.service";
+import { FaqsService } from "../services/Publications/faqs.service";
 import { FaqsMapper } from "../mappers/faqs.mapper";
 
 export const GetAllFaqs = async () => {

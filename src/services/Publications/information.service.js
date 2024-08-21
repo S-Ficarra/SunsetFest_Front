@@ -1,5 +1,5 @@
-import { InformationDto } from "../dto/information.dto";
-import { BASE_URL } from "../App";
+import { InformationDto } from "../../dto/information.dto";
+import { BASE_URL } from "../../App";
 
 export const InformationService = {
 
