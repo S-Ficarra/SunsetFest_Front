@@ -12,6 +12,7 @@
     display: grid;
     width: 10%;
     grid-template-rows: repeat(6 ,1fr);
+    padding: 0 1em;
 }
 
 .TimeListContainer h2 {
