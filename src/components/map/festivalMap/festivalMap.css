@@ -1,6 +1,7 @@
 .MapContainer {
   position: relative;
   margin: 0 auto;
+  height: 100%;
 
 }
 
@@ -71,15 +72,18 @@
   margin: 1em auto;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
 
-  .FiltersContainer{
-    display: none;
+
+  #mapOnly {
+    height: 1000px;
   }
 
-  #map {
-    display: flex;
-    flex-direction: column-reverse;
+  .FiltersContainer {
+    position: relative;
+    margin: 3em auto;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
 }

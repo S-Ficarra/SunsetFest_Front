@@ -11,9 +11,6 @@ function Markers({ dataArray, backgroundColor, Img}) {
   const handleMarkerClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
-
-  console.log(dataArray);
-  
   
 
   return (

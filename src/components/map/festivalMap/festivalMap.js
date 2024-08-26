@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { APIProvider, Map } from '@vis.gl/react-google-maps';
 import './festivalMap.css';
 import Filters from "../filters/filters";
@@ -13,6 +14,12 @@ import { useAllRestaurants } from "../../../hooks/Facilities/useAllRestaurants";
 import { useAllMerchandisings } from "../../../hooks/Facilities/useAllMerchandisings";
 
 function FestivalMap() {
+
+    const location = useLocation();
+    
+    const isHomePage = location.pathname ==='/';
+    const isMapPage = location.pathname ==="/carte";
+
 
     const { allStages } = useAllStages();
     const { allToilets } = useAllToilets();
@@ -45,10 +52,13 @@ function FestivalMap() {
     return (
         <div className="MapContainer">
             <div id="map">
-                <div>
+                {isHomePage && window.innerWidth > 800 && (
                     <Filters filters={filters} onFilterChange={handleFilterChange} />
-                </div>
-                <APIProvider apiKey={process.env.REACT_APP_GOOGLE_API_KEY} onLoad={() => console.log('Maps API has loaded.')}>
+                )}
+                {isMapPage && (
+                    <Filters filters={filters} onFilterChange={handleFilterChange} />
+                )}
+                <APIProvider id="mapOnly" apiKey={process.env.REACT_APP_GOOGLE_API_KEY} onLoad={() => console.log('Maps API has loaded.')}>
                     <Map
                         defaultZoom={15}
                         mapId={process.env.REACT_APP_MAP_ID}
