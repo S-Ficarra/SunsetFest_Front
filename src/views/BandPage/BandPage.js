@@ -7,13 +7,14 @@ import NavBar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
 import TicketInfoPanel from "../../components/ticketsInfoPanel/ticketInfoPanel";
-import { convertToBase64 } from "../../services/utils";
 import FbLogo from '../../assets/socialsLogos/facebook.svg'
 import InstaLogo from '../../assets/socialsLogos/instagram.svg'
 import XLogo from '../../assets/socialsLogos/x-twitter.svg'
 import YoutLogo from '../../assets/socialsLogos/youtube.svg'
 import SpotLogo from '../../assets/socialsLogos/spotify.svg'
 import WebLogo from '../../assets/socialsLogos/globe-solid.svg'
+import { BASE_URL } from "../../App";
+
 
 function BandPage () {
 
@@ -35,7 +36,7 @@ function BandPage () {
         <>
             <NavBar />
             <div className="BandHeader">
-                <img src={convertToBase64(band.bannerImage.data)} alt={band.name} />
+                <img src={`${BASE_URL}${band.bannerImage}`} alt={band.name} />
                 <div className="HeaderBlackFilter"></div>
                 <div className="BandHeaderTextContainer">
                     <h1>{band.name.toUpperCase()}</h1>

@@ -1,10 +1,11 @@
 import React from "react";
-import { convertToBase64 } from "../../../services/utils";
 import './lineUpHomePage.css'
 import { Link } from "react-router-dom";
 import { useAllBands } from "../../../hooks/useAllBands";
 import { useScreenSize } from "../../../hooks/useScreenSize";
 import '../../../App.css'
+import { BASE_URL } from "../../../App";
+
 
 function LineUpHomePage () {
 
@@ -22,7 +23,7 @@ function LineUpHomePage () {
                 {screenSize < 600 && 
                     bands.slice(0, 4).map((band) => (
                         <div className="BandContainer" key={band.id}>
-                            <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
+                            <img src={`${BASE_URL}${band.thumbnailImage}`} alt={band.name} />
                             <div className="BlackFilter"></div>
                             <h2>{band.name}</h2>
                         </div>
@@ -32,7 +33,7 @@ function LineUpHomePage () {
                 {screenSize > 600 && screenSize < 1299 && 
                     bands.slice(0, 6).map((band) => (
                         <div className="BandContainer" key={band.id}>
-                            <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
+                            <img src={`${BASE_URL}${band.thumbnailImage}`} alt={band.name} />
                             <div className="BlackFilter"></div>
                             <h2>{band.name}</h2>
                         </div>
@@ -42,7 +43,7 @@ function LineUpHomePage () {
                 {screenSize >= 1300 && 
                     bands.slice(0, 8).map((band) => (
                         <div className="BandContainer" key={band.id}>
-                            <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
+                            <img src={`${BASE_URL}${band.thumbnailImage}`} alt={band.name} />
                             <div className="BlackFilter"></div>
                             <h2>{band.name}</h2>
                         </div>

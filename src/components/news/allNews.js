@@ -1,8 +1,9 @@
 import React from "react";
-import { convertToBase64 } from "../../services/utils";
 import { Link } from "react-router-dom";
 import { useAllNews } from "../../hooks/Publications/useAllNews";
 import './allNews.css'
+import { BASE_URL } from "../../App";
+
 
 function AllNews () {
 
@@ -14,7 +15,7 @@ function AllNews () {
                 {allNews.map((news) => (
                     <Link to={`/actualites/${news.id}/${encodeURIComponent(news.title.replace(/\s/g, '-'))}`} key={news.id}>
                         <div className="NewsContainer">
-                        <img src={convertToBase64(news.image.data)} alt={news.title} />
+                        <img src={`${BASE_URL}${news.image}`} alt={news.title} />
                         <div className="BlackFilter"></div>
                         <h2>{news.title}</h2>
                         </div>

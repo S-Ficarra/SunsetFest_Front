@@ -1,8 +1,8 @@
 import React from "react";
-import { convertToBase64 } from "../../services/utils";
 import './lineUp.css'
 import { Link } from "react-router-dom";
 import { useAllBands } from "../../hooks/useAllBands";
+import { BASE_URL } from "../../App";
 
 function LineUp () {
 
@@ -14,7 +14,7 @@ function LineUp () {
                 {bands.map((band) => (
                     <Link to={`/lineup/${band.id}/${encodeURIComponent(band.name.replace(/\s/g, ''))}`} key={band.id}>
                     <div className="BandContainer" >
-                        <img src={convertToBase64(band.thumbnailImage.data)} alt={band.name} />
+                        <img src={`${BASE_URL}${band.thumbnailImage}`} alt={band.name} />
                         <div className="BlackFilter"></div>
                         <h2>{band.name}</h2>
                     </div>

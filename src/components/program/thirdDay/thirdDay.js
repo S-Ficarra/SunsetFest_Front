@@ -1,4 +1,4 @@
-import { convertToBase64 } from '../../../services/utils';
+import { BASE_URL } from '../../../App';
 
 
 function ThirdDay ({performances}) {
@@ -27,7 +27,7 @@ function ThirdDay ({performances}) {
                         const hour = time.getHours()
                         return (
                             <div key={performance._id} className={`row-${hour} PerformanceContainer`}>
-                                <img src={convertToBase64(performance._band._thumbnailImage.data)} alt="" />
+                                <img src={`${BASE_URL}${performance._band._thumbnailImage}`} alt={performance._band._name} />
                                 <div className="BlackFilter"></div>
                                 <p>{performance._band._name}</p>
                             </div>)
@@ -42,7 +42,7 @@ function ThirdDay ({performances}) {
                         const hour = time.getHours()
                         return (
                             <div key={performance._id} className={`row-${hour} PerformanceContainer`}>
-                                <img src={convertToBase64(performance._band._thumbnailImage.data)} alt="" />
+                                <img src={`${BASE_URL}${performance._band._thumbnailImage}`} alt={performance._band._name} />
                                 <div className="BlackFilter"></div>
                                 <p>{performance._band._name}</p>
                             </div>)
@@ -57,7 +57,7 @@ function ThirdDay ({performances}) {
                         const hour = time.getHours()
                         return (
                             <div key={performance._id} className={`row-${hour} PerformanceContainer`}>
-                                <img src={convertToBase64(performance._band._thumbnailImage.data)} alt="" />
+                                <img src={`${BASE_URL}${performance._band._thumbnailImage}`} alt={performance._band._name} />
                                 <div className="BlackFilter"></div>
                                 <p>{performance._band._name}</p>
                             </div>)
@@ -72,7 +72,7 @@ function ThirdDay ({performances}) {
                         const hour = time.getHours()
                         return (
                             <div key={performance._id} className={`row-${hour} PerformanceContainer`}>
-                                <img src={convertToBase64(performance._band._thumbnailImage.data)} alt="" />
+                                <img src={`${BASE_URL}${performance._band._thumbnailImage}`} alt={performance._band._name} />
                                 <div className="BlackFilter"></div>
                                 <p>{performance._band._name}</p>
                             </div>)

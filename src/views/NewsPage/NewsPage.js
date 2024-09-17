@@ -1,12 +1,12 @@
 import React from "react";
 import './NewsPage.css'
-import { convertToBase64 } from "../../services/utils";
 import { useParams } from "react-router-dom";
 import { useNews } from "../../hooks/Publications/useNews";
 import NavBar from "../../components/navbar/navbar";
 import SkullLogo from '../../assets/LogoSkullOnlysmall.png'
 import TicketInfoPanel from "../../components/ticketsInfoPanel/ticketInfoPanel";
 import Footer from "../../components/footer/footer";
+import { BASE_URL } from "../../App";
 
 
 
@@ -23,7 +23,7 @@ function NewsPage () {
         <>
             <NavBar />
             <section className="ImageContainer">
-                <img src={convertToBase64(news.image.data)} alt={news.title} />
+                <img src={`${BASE_URL}${news.image}`} alt={news.title} />    
                 <div className="ImageBlackFilter"></div>
                 <h1>{news.title.toUpperCase()}</h1>
             </section>

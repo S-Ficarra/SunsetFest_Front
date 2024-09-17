@@ -1,11 +1,11 @@
 import React from "react";
-import { convertToBase64 } from "../../../services/utils";
 import { Link } from "react-router-dom";
 import { useAllNews } from "../../../hooks/Publications/useAllNews";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './newsHomePage.css';
+import { BASE_URL } from "../../../App";
 
 function NewsHomePage () {
 
@@ -54,7 +54,7 @@ function NewsHomePage () {
                     <div key={news.id} className="NewsSlide">
                         <Link to={`/actualites/${news.id}/${encodeURIComponent(news.title.replace(/\s/g, '-'))}`}>
                             <div className="NewsContainerHomePage">
-                                <img src={convertToBase64(news.image.data)} alt={news.title} />
+                                <img src={`${BASE_URL}${news.image}`} alt={news.title} />                                
                                 <div className="BlackFilter"></div>
                                 <h2>{news.title}</h2>
                             </div>
