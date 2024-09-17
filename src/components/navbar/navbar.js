@@ -18,7 +18,7 @@ function NavBar () {
                     <span>|</span>
                     <NavLink to='/lineup'>LINE-UP</NavLink>
                     <span>|</span>
-                    <NavLink to='/billeterie' target="blank">BILLETS</NavLink>
+                    <NavLink to='/billetterie' target="blank">BILLETS</NavLink>
                     <span>|</span>
                     <NavLink to='/informations'>INFORMATIONS</NavLink>
                     <span>|</span>

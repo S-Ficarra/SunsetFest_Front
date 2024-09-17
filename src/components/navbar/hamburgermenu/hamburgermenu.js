@@ -21,7 +21,7 @@ const  HamburgerMenu= () => {
             <div className={`MenuLinksMobile ${isOpen ? 'open' : ''}`}>
                 <NavLink to="/actualites">ACTUALITÉS</NavLink>
                 <NavLink to="/lineup">LINE-UP</NavLink>
-                <NavLink to="/billeterie" target="blank">BILLETS</NavLink>
+                <NavLink to="/billetterie" target="blank">BILLETS</NavLink>
                 <NavLink to="/informations">INFORMATIONS</NavLink>
                 <NavLink to="/carte">CARTE</NavLink>
             </div>

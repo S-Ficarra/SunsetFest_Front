@@ -10,7 +10,7 @@ function TicketInfoPanel () {
             <div className="FullContainer">
                 <div className="TicketContainer">
                     <h2>BILLETTERIE</h2>
-                    <Link to='/billeterie' target="blank">
+                    <Link to='/billetterie' target="blank">
                     <button>achetez vos billets</button>
                     </Link>
                 </div>
