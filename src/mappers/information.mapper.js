@@ -7,7 +7,7 @@ export const InformationMapper = {
             informationDto.id,
             informationDto.content._title,
             informationDto.content._text,
-            informationDto.content._image
+            informationDto.content._imageUrl
         );
     }
     

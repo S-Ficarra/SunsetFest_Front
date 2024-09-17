@@ -7,7 +7,7 @@ export const NewsMapper = {
             newsDto.id,
             newsDto.content._title,
             newsDto.content._text,
-            newsDto.content._image,
+            newsDto.content._imageUrl,
             newsDto._createdAt
         );
     }

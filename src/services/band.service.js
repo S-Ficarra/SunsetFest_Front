@@ -12,8 +12,8 @@ export const bandService = {
           band._country,
           band._text,
           band._socials,
-          band._thumbnailImage,
-          band._bannerImage,
+          band._thumbnailImageUrl,
+          band._bannerImageUrl,
           band._user,
           band._createdAt,
           band._modifiedAt
@@ -29,8 +29,8 @@ export const bandService = {
             band._country,
             band._text,
             band._socials,
-            band._thumbnailImage,
-            band._bannerImage,
+            band._thumbnailImageUrl,
+            band._bannerImageUrl,
             band._user,
             band._createdAt,
             band._modifiedAt
